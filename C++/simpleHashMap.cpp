@@ -8,6 +8,7 @@ http://www.algolist.net/Data_structures/Hash_table/Simple_example
 http://c.learncodethehardway.org/book/ex37.html
 http://www.boost.org/doc/libs/1_37_0/doc/html/unordered.html
 https://www.quora.com/How-do-I-implement-hash-table-and-hash-map-in-c++
+http://www.grokit.ca/cnt/HashTable/
 */
 
 
