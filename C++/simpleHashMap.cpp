@@ -2,6 +2,12 @@
 /*
 https://gist.github.com/aozturk/2368896
 https://medium.com/@aozturk/simple-hash-map-hash-table-implementation-in-c-931965904250
+http://codereview.stackexchange.com/questions/14498/implementation-of-hash-map
+http://codereview.stackexchange.com/questions/67625/implementation-of-fixed-size-hash-map
+http://www.algolist.net/Data_structures/Hash_table/Simple_example
+http://c.learncodethehardway.org/book/ex37.html
+http://www.boost.org/doc/libs/1_37_0/doc/html/unordered.html
+https://www.quora.com/How-do-I-implement-hash-table-and-hash-map-in-c++
 */
 
 
