@@ -1,0 +1,26 @@
+
+Design a function to merge a list of contacts between various clients updating a web service 
+
+Create an algorithm to place a series of randomized ships onto a battleship(game)-esque grid system.
+
+Create an algorithm to determine whether pixels surrounding a grid spot in a Game of Life environment are turned on.
+
+Rearrange digits of a number to find the largest possible number in O(n) time. 
+
+What are your failures in the past?  
+
+Create a queue (enqueue and dequeue methods) using stacks as your only storage method
+
+Design problem of a shopping cart
+
+Given a list of numbers, sort them and remove the duplicate numbers.  
+
+You have two substrings of a string that overlap. How would you put them together into one string?  
+
+Write an atoi function for scratch.  
+
+Given two sorted arrays, combine the two arrays in order without using a sort algorithms after the merge?  
+
+Nine marble brain teaser question. 
+
+
