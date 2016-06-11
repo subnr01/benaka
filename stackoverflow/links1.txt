@@ -1,0 +1,2 @@
+http://stackoverflow.com/questions/7455982/is-stl-vector-concurrent-read-thread-safe
+http://www.drdobbs.com/the-standard-librarian-defining-iterato/184401331
