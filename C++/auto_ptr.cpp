@@ -15,5 +15,6 @@ http://www.codeproject.com/Articles/15351/Implementing-a-simple-smart-pointer-in
 http://www.aristeia.com/BookErrata/auto_ptr-update.html
 http://venus.cs.qc.edu/~waxman/780/meyersautopointer.pdf
 http://venus.cs.qc.edu/~waxman/780/
+http://www.gotw.ca/gotw/025.htm
 
 */
