@@ -26,6 +26,25 @@ What's the difference between unit test and integration test?
 Describe a software development life cycle that you've managed.
 Implement a <basic data structure> using <some language> on <paper|whiteboard|notepad>.
 
+* Why Microsoft? 
+* What is Cloud Computing? 
+* How would you design a software application? Discussion about software and hardware requirements. How would you handle increase in load? How would you manage the increase in load without additional hardware?
+
+If we contact your references, what strong qualities would each one of them tell about you, also 
+what areas would they say you need improvement.
+
+give ur introduction why samsung what quality u lack and what u r doing to improve it.
+
+What happens behind the scene when we typ an url in browser and hit enter?
+
+What is ur passion and what do you want to do in your life as a software developer
+
+What kind of role are you looking for?
+
+What keywords ur peers will use to describe you?
+
+Describe a situation that you failed? How did you handle it?
+
 
 
 Concurrency
