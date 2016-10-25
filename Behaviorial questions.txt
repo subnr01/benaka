@@ -1,0 +1,59 @@
+
+
+
+Senior software developer:
+-------------------------------------
+
+http://softwareengineering.stackexchange.com/questions/25564/when-should-you-call-yourself-a-senior-developer
+http://mattbriggs.net/blog/2015/06/01/the-role-of-a-senior-developer/
+http://www.techrepublic.com/blog/software-engineer/what-makes-a-developer-senior/
+https://www.theguardian.com/info/developer-blog/2014/aug/28/what-does-it-mean-to-be-a-senior-developer
+https://en.wikipedia.org/wiki/Lead_programmer
+https://www.quora.com/When-does-a-software-developer-become-a-senior-software-developer
+How did you increase the effeciency of a system?
+How do you handle a low performing employee
+Describe a techinical project and hurdles
+1) Narrate an instance you optimized or improved a software design. 
+2) Given a chance how would you re-think some of the design aspects?
+
+What elements of OO design are most prone to abuse? How would you mitigate that?
+When do you know your code is ready for production?What's the difference between a web server, web farm and web garden? 
+How would your web application need to change for each?
+
+What is Refactoring ? Have you used it and it is important? Name three common refactorings.
+
+What's the difference between unit test and integration test?
+Describe a software development life cycle that you've managed.
+Implement a <basic data structure> using <some language> on <paper|whiteboard|notepad>.
+
+
+
+Concurrency
+-------------
+What's the difference between Locking and Lockless (Optimistic and Pessimistic) concurrency models?
+What kinds of problems can you hit with locking model? And a lockless model?
+What trade offs do you have for resource contention?
+How might a task-based model differ from a threaded model?
+What's the difference between asynchrony and concurrency?
+
+
+mangerial ladder vs technical ladder
+-------------------------------------
+
+
+
+Software estimation
+-------------
+
+
+Agile explained in a simple manner
+-------------
+
+
+How do you handle conflict/convince:
+
+-- With Manager
+
+-- With teammates
+
+-- With subordinates
