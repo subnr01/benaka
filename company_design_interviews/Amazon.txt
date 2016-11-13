@@ -1,0 +1,66 @@
+Describe the last product/project you worked on and any scalability issues you had with it?
+What was the TPS?  
+
+How would you implement a highly-available DHCP server?  
+
+
+implement the interface:
+interface SortedList<T>{
+/*Get an item from list at index position
+*params index - index position in array
+*returns item - if item is found at index position
+*throws IndexOutOfBoundException - if input index is not within list
+
+T get(int index);
+}
+
+
+One was to write a solution to the 'continental divide' problem.  
+
+
+1.) Tell me about yourself, what your day to day activities are at your job
+2.) Discuss a time when I took initiative to do something that resulted in a change.
+3.) Just one question on Method that takes two arrays [1,2,3] and [3,4,5] processes it like this --> 
+{1,3}, {1,4},{1,5},{2,3}, {2,4}....{3,5}} and print out the number of paired duplicates in the processing. 
+Which is 1 from this example => {3,3}  
+
+
+
+2) Dial pad string generation / autocomplete related
+3) System design - be prepared to design database etc from scratch ... basically prepare by thinking deeply in 
+designing any system/components. Which means you need to specify which data structures to use, what will be 
+work flow, how the concurrency and scale will be handled.
+
+
+I don't have the exact question, but the problem was essentially to write code to 
+convert text to variable length bit encoding similar to Huffman coding. Determine frequency of 
+occurrence for each letter in the text assign it a bit code so that more frequent characters get shorter bit codes.  
+
+
+How to implement a URL shorten service 
+
+
+a. Design an algorithm to find K biggest numbers in the array.
+b. Design an algorithm to find a shortest path between two given words of same lengths so that every word differs from preceding and succeeding word in the path by exactly one character.
+c. Design a system that processes events in real time.  
+
+ What is a hashtable? How does it work? What is is the runtime for retrieving an item. In what situation the this runtime is lager than ideal case?
+ 
+ Design an online airline reservation system.
+ 
+ Write a program to generate a "Unique Ticket" for each request. The number of requests could be quite large - up to a million per second.  
+ 
+ How would you write a software for dna matching.  
+ 
+ Hardest Q was: Here's a binary tree: find the longest path within it. So, find a path between any two leaf nodes, where the path is the longest. 
+ 
+ Write a function to allocated two dimensional rectangles within a larger area.  
+
+
+Write C++ code to support Rubik's cube solving
+
+
+Given a trie and a prefix, find the word (in the trie) that starts with some subsequence of the prefix and also has the longest such subsequence.  
+
+
+
