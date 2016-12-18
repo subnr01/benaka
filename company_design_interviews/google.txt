@@ -1,0 +1,132 @@
+
+
+============================================================================================
+
+I applied through an employee referral. The process took 4 weeks. I interviewed at Google (Mountain View, CA) in April 2014.
+
+Interview
+Direct onsite because I interviewed in the past and did well that time. From the time I sent my resume to interview day: 2 weeks. From interview day to offer over the phone: 2 weeks.
+
+The syllabus for the interviews is very clear and simple:
+1) Dynamic Programming
+2) Super recursion (permutation, combination,...2^n, m^n, n!...etc. type of program. (NP hard, NP programs)
+3) Probability related programs
+4) Graphs: BFS/DFS are usually enough
+5) All basic data structures from Arrays/Lists to circular queues, BSTs, Hash tables, B-Trees, and Red-Black trees, and all basic algorithms like sorting, binary search, median,...
+6) Problem solving ability at a level similar to TopCoder Division 1, 250 points. If you can consistently solve these, then you are almost sure to get in with 2-weeks brush up.
+7) Review all old interview questions in Glassdoor to get a feel. If you can solve 95% of them at home (including coding them up quickly and testing them out in a debugger + editor setup), you are in good shape.
+8) Practice coding--write often and write a lot. If you can think of a solution, you should be able to code it easily...without much thought.
+9) Very good to have for design interview: distributed systems knowledge and practical experience.
+10) Good understanding of basic discrete math, computer architecture, basic math.
+11) Coursera courses and assignments give a lot of what you need to know.
+12) Note that all the above except the first 2 are useful in "real life" programming too!
+
+Interview 1:
+Graph related question and super recursion
+
+Interview 2:
+Design discussion involving a distributed system with writes/reads going on at different sites in parallel.
+
+Interview 3:
+Array and Tree related questions
+
+Interview 4:
+Designing a simple class to do something. Not hard, but not easy either. You need to know basic data structures very well to consider different designs and trade-offs.
+
+Interview 5:
+Dynamic programming,
+Computer architecture and low level perf. enhancement question which requires knowledge of Trees, binary search, etc.
+
+At the end, I wasn't tired and rather enjoyed the discussions. I think the key was long term preparation and time spent doing topcoder for several years (on and off as I enjoy solving the problems).
+
+Conclusion: "It's not the best who win the race; it's the best prepared who win it."
+
+=================================================================================================================
+1) A string consists of ‘0’, ‘1’ and '?'. The question mark can be either '0' or '1'. Find all possible combinations 
+for a string.
+2) Give you a text file, remove duplicated lines.
+Follow up: If the file is very large, general hash map takes too much spaces, come up with a better solution.
+
+=================================================================================================================
+1. Given a node in a BST where each node has a pointer to its parent, find the next largest node
+2. Implement String encode and decode  
+
+Given an int array A, return an int array B that A[i + B[i]] is the first element in A after A[i]
+that is greater than or equal to A[i]
+
+Given a list of files, each of which contains some "require METHOD_NAME" lines, and "provide METHOD_NAME" lines. Return a working order of files to be processed. 
+
+Implement a telephone # management system that assign randomly, recycle and check availability of 10 digit numbers. 
+
+
+=================================================================================================================
+
+Signed NDA but definitely topic on data structures, binary tree, hash tables, etc and questions on the time complexity of the algorithms. 
+Design a HashMap.
+Topological Sort
+=================================================================================================================
+Phone interview: Given an NxN matrix how would you print all elements in a spiral way starting from the middle element.
+Phone interview answer: 4 for loops with conditions.
+Onsite:
+Interviewer 1:
+Q1: Find all pairs of numbers that equal to a given sum in a given int array.
+My Answer: Put all in a HashSet and iterate over elements to find sum - current number is present or not and add that pair to the result. O(n) runtime.
+Q2: Find the longest sequence of integers in a given int array.
+My Answer: Maintain two lists. One holding current sequence and the other holding longest sequence. If current is longer than longest then copy current to the longest and continue. O(n) with two temporary lists space.
+
+Interviewer 2:
+Asked about ETL and it's advantages/disadvantages. I told him that I am a java/web developer and he still asked me to design a system and things to consider while transferring data from one DB to another. I asked if I should tell him things to consider in Java while doing this? He said no but "In general". He is an ETL developer. Not sure what I told satisfied him.
+
+Lunch
+
+Interviewer 3:
+Remote will have A-Z with 5 letters per line. Design a method which takes in a movie name and gives a string output which will have movement code (for e.g. for typing U you will move down three times and right a couple of times so the output should be (DDD!RR!) . I took longer than expected I guess to solve this one. But I got D, L and R movements in the given time crunch.
+My answer: Involves get int value of letter and get divisor and remainder by 5 and use them to determine moving direction and number of times.
+
+Interviewer 4:
+Design a restaurant.
+Inheritance and Composition basics.  
+
+=================================================================================================================
+Everything everyone else has said, basically. They somewhat more creative than other questions I've gotten, but they really do just rely on the basics: data structures, algorithms, runtime analysis, class design, concurrency & scalability, etc. You just have to know the HECK out of the basics. 
+
+If you had a list of countries and their population, create a random generator that picks a country but takes into consideration the population. So a country with a higher population has a higher chance of being chosen. 
+=================================================================================================================
+
+The interview process took about 3 weeks. There was an HR interview at the beginning, just a 30 minutes talk about different opportunities and the recruitment process.
+Then there was a skype technical interview to assess:
+- Coding knowledge
+- Algorithms
+- Data structures
+- Systems design
+Write an efficient method to find the first non-repeated character in a string. Example: the first non-repeated character in “teeters” is “r”.
+=================================================================================================================
+
+Recruiter emailed 4 days after I applied to schedule a phone interview. Phone interview happened a week and a half later (November 7). Phone interview consisted of coding on a blank google doc for the question of: given an array of n integers, check if the array has two nearby duplicate numbers (meaning if a [2] = 3, Then check if 3 occurs at most two positions after. Started with brute force and it took a long time to get to O(n) using Dictionary
+
+Interview Questions
+Write a function that given an array of numbers, return the highest occurrence of a number. Say 6 showed up the most (8 times) return 8.
+
+I over thought the question. This is in C and I'm guessing they just wanted a me to allocate a full array (256 for 8 bit) and +1 an entry whenever that number occurs (histo[number]++) while keeping the highest occurrence in a return variable if (histo[number] > highest) highest++;.
+
+I thought the solution was way too simple (like 6 lines tops) so I thought of a solution that would work for very large numbers for which a full array couldn't be allocated (64 bit = 2^64 array for instance). It wasn't as memory and computationally efficient as allocating a full array for lower bit number ranges (8, 16, 32) but it was a more robust and complete solution.
+
+Anyways, I guess he didn't see it that way. They turned me down. 8(
+
+So warning.. don't overthink a question on the phone interview. They're more likely to just want the 6 line quick answer on the phone interview. I think the phone interview is purely to weed out the complete idiots. If you overthink what they think is an easy problem then you look like a complete idiot.
+
+Onsite is be more challenging. I did the onsite a few years ago and the solutions and implementation required some thought. 
+
+=================================================================================================================
+
+=================================================================================================================
+
+=================================================================================================================
+
+=================================================================================================================
+
+=================================================================================================================
+
+=================================================================================================================
+
+=================================================================================================================
