@@ -190,14 +190,89 @@ Parse file to do string manipulation.
 
 How would I build a subsystem that involved sorting and searching though data.
 
+Running Average (Given one number at a time, compute the average of the last K numbers given in the past
+
+How do you evaluate the reverse polish notation. Additionally implement a variant that also allows assigning values to variables, recalling them and reassigning them as an addition to the RPN.
 
 =================================================================================================================
 
+Given a string , reverse the vowels in it ( with and without using extra memory )
+Given a set of points, find the smallest rectangle by area.
+
+Trie data structure . Basically the question was given a prefix how do you retrieve the words from a large dictionary and then how to perform insert operations etc.
+Overlapping handshake problem . How many combinations of handshakes are possible in a round table of n people such that there is no overlap of handshake between 2 people with any other handshake ( n is even)  
+
 
 
 =================================================================================================================
 
+First Interview: Name a difficult bug that you had to solve in your past projects.
+Implement Conway's Game of Life (using a method that receives a 2d array as input)  
+Create a method that determines if a 2d array is a Toeplitz matrix.
 
+Many of the interview questions can be found on websites like leetcode, hackerrank, ... From my experience, the specific questions don't matter too much. What matters is that you practice solving and coding problems as often as possible (ideally daily) to get comfortable with it.  
 
+Given a string of characters, output the first position that the character is not lexicographical order.
 =================================================================================================================
+Deisgn a new cache, and what things will you keep in mind? Had to describe multiple levels, speed, eviction etc.  
+
+Phone interview was the well-known count number of islands in a grid problem 
+
+Q1. Given a string and dictionary of words, form a word by removing minimum number of characters. Characters can be removed in-order only
+
+I am asked not to share the interview questions, but one of the topics required binary searching, and another was related to travelling salesman
+
+Given sorted arrays from disk, network, and memory, write an interface to sort the data.
+
+Got a call from Recruiter and a month later I went onsite. had 4 interviews, 2 before lunch and 2 after lunch. In each interview, my interviewer was looking for my approach rather than for my solution and how did I arrive at that approach. It is true that you have to complete the code by the end of the each interview session to be considered. It doesn't matter which… 
+
+
+Smoothing a stock chart.  
+========================================================================================================================
+Initial phone call from a recruiter who set up a phone screen with an engineer. Invited to an onsite a week later. I had 4 people interview me with one other person who took me to lunch. Got a reject from the recruiter 3 days after my onsite.
+
+Interview Questions
+Phone interview: Given an NxN matrix how would you print all elements in a spiral way starting from the middle element.
+Phone interview answer: 4 for loops with conditions.
+
+Onsite:
+Interviewer 1:
+Q1: Find all pairs of numbers that equal to a given sum in a given int array.
+My Answer: Put all in a HashSet and iterate over elements to find sum - current number is present or not and add that pair to the result. O(n) runtime.
+Q2: Find the longest sequence of integers in a given int array.
+My Answer: Maintain two lists. One holding current sequence and the other holding longest sequence. If current is longer than longest then copy current to the longest and continue. O(n) with two temporary lists space.
+
+Interviewer 2:
+Asked about ETL and it's advantages/disadvantages. I told him that I am a java/web developer and he still asked me to design a system and things to consider while transferring data from one DB to another. I asked if I should tell him things to consider in Java while doing this? He said no but "In general". He is an ETL developer. Not sure what I told satisfied him.
+
+Lunch
+
+Interviewer 3:
+Remote will have A-Z with 5 letters per line. Design a method which takes in a movie name and gives a string output which will have movement code (for e.g. for typing U you will move down three times and right a couple of times so the output should be (DDD!RR!) . I took longer than expected I guess to solve this one. But I got D, L and R movements in the given time crunch.
+My answer: Involves get int value of letter and get divisor and remainder by 5 and use them to determine moving direction and number of times.
+
+Interviewer 4:
+Design a restaurant.
+Inheritance and Composition basics.  
+========================================================================================================================
+Design a Google Docs distributed system with doc save and edit features.
+Interview Questions
+first phone interview:
+    1. there are two arrays, the two array almost same except one array has an extra element than another one, find that element.
+    2. Given a rows x cols screen and a sentence represented by a list of words, find how many times the given sentence can be fitted on the screen.
+
+second phone interview:
+    top K frequency keywords 
+
+========================================================================================================================
+
+https://www.glassdoor.com/Interview/Google-Interview-Questions-E9079_P11.htm?sort.sortType=RD&sort.ascending=false&filter.jobTitleFTS=software+engineer
+
+========================================================================================================================
+
+
+========================================================================================================================
+
+
+========================================================================================================================
 
