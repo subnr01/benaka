@@ -1,0 +1,4 @@
+How to conduct code reviews in C++/Java
+
+1. Ensure variable after malloc return is NULL.
+2. Ensure that MACROS are used instead of raw numbers.
