@@ -25,7 +25,12 @@ http://blog.smartbear.com/code-review/creating-your-code-review-checklist/
 http://www.desy.de/~gbrandt/talks/iCSC_CodeReviews.pdf
 http://codergears.com/Blog/?p=1957
 https://isocpp.org/wiki/faq/coding-standards
+http://softwareengineering.stackexchange.com/questions/45138/worst-practices-in-c-common-mistakes
 https://github.com/lefticus/cppbestpractices
+http://softwareengineering.stackexchange.com/questions/45138/worst-practices-in-c-common-mistakes
+https://developers.google.com/edu/c++/
+https://forums.unrealengine.com/showthread.php?58524-Best-practices-for-project-architecture-when-using-C-and-Blueprints
+http://exceptionsafecode.com/
 
 
 Points:
