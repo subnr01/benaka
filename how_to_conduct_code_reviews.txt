@@ -1,4 +1,33 @@
 How to conduct code reviews in C++/Java
 
+
+Links:
+https://www.kevinlondon.com/2015/05/05/code-review-best-practices.html
+http://softwareengineering.stackexchange.com/questions/1224/whats-the-most-effective-way-to-perform-code-reviews
+https://blog.jetbrains.com/upsource/2015/07/23/what-to-look-for-in-a-code-review/
+https://blog.codinghorror.com/code-reviews-just-do-it/
+https://www.atlassian.com/agile/code-reviews
+https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/
+https://www.ibm.com/developerworks/rational/library/11-proven-practices-for-peer-review/
+https://www.infoq.com/articles/effective-code-reviews
+http://blogs.atlassian.com/2014/03/every-team-needs-kick-ass-code-reviews/
+http://swreflections.blogspot.com/2014/08/dont-waste-time-on-code-reviews.html
+https://alexgaynor.net/2013/sep/26/effective-code-review/
+https://www.quora.com/What-are-some-best-practices-for-Code-Review
+
+
+C++
+http://stackoverflow.com/questions/6260440/undefined-behavior-a-checklist-for-code-reviews
+http://codereview.stackexchange.com/questions/tagged/c%2B%2B
+https://hakin9.org/new-article-c-code-reviews/
+https://www.parasoft.com/resource/best-practices-for-bulletproofing-cc-code/
+http://blog.smartbear.com/code-review/creating-your-code-review-checklist/
+http://www.desy.de/~gbrandt/talks/iCSC_CodeReviews.pdf
+http://codergears.com/Blog/?p=1957
+https://isocpp.org/wiki/faq/coding-standards
+https://github.com/lefticus/cppbestpractices
+
+
+Points:
 1. Ensure variable after malloc return is NULL.
 2. Ensure that MACROS are used instead of raw numbers.
