@@ -62,5 +62,7 @@ Write C++ code to support Rubik's cube solving
 
 Given a trie and a prefix, find the word (in the trie) that starts with some subsequence of the prefix and also has the longest such subsequence.  
 
-
+Given a distributed system with many clients and many servers where the servers each export a different set of services and each have a different amount of computing power discuss the data structures used in a router to perform load balancing.
+Write a function that given a list of items and weights return a random item in the list taking the weights into account.
+Now write a O(log(n)) function
 
