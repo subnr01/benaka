@@ -46,6 +46,7 @@ What keywords ur peers will use to describe you?
 Describe a situation that you failed? How did you handle it?
 
 
+https://discuss.leetcode.com/topic/46162/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partioning
 
 Concurrency
 -------------
