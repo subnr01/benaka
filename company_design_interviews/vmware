@@ -1,0 +1,35 @@
+
+Staff engineer
+
+Design a network file system: which operations of a POSIX file system are you going to support, how would you organize the hardware, how does the communication work, how are the files stored, etc... discuss all design decisions in terms of the CAP theorem, be able to spot hot-spots and single points of failure.  
+
+In a non-directed graph, count the number of subgraphs (not necessarily fully connected, just subgraphs in general). Discuss why and how you'd optimize this given different number of vertices, different density/completion of the graph, etc...  
+
+
+How would you design a transactional file system?
+
+Implement a LRU cache that can be initialized with a max size (in bytes) and keeps track of the hits/misses. 
+
+
+Implement tic-tac-toe.
+
+How to effeciently scan log files.
+
+I was tested on distributed computing concepts.
+
+Design an elevator system
+
+Hacker rank string manipulation
+
+Given a directory structure, read all file names.
+
+Tree algorithms with focus on multithreading
+
+Write the implementaiton of LRU map
+
+Details about exactly how storage systems worked at the protocol level.
+
+Understanding of software architecture principles (OOD/OOP, unit testing etc.), a high-level design of distributed systems (load balancing, replication etc.), common web principles (sessions, cookies, REST etc.).  
+
+
+
