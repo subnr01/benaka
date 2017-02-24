@@ -66,3 +66,4 @@ Given a distributed system with many clients and many servers where the servers 
 Write a function that given a list of items and weights return a random item in the list taking the weights into account.
 Now write a O(log(n)) function
 
+You have a huge data file (gigabytes in size) full of URLs, one per line. There are many duplicates throughout the file. How would you process this data to produce an output file with one unique URL per line, followed by the number of occurrences? 
