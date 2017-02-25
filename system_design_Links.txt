@@ -2,3 +2,5 @@
 
 http://massivetechinterview.blogspot.com/2015/06/algorithm-how-to-count-number-of.html
 
+http://massivealgorithms.blogspot.com/2016/08/leetcode-362-design-hit-counter.html
+
