@@ -1,0 +1,36 @@
+level order traversal with and without recursion and using DP, few other DP based questions, tries, networking and DS questions. Design based questions, one question also on implementing a process table and killing all the child and grandchild processes once a main one was terminated.
+
+================================================================
+
+phone screen - 1. basic string question (make sure to handle all corner cases and null pointer checks if writing in 'C') 2. Basic concepts of Distributed systems and discussion on how to build a fault tolerant distributed metastore Onsite: 1. Distributed systems, Linux Kernel programming concepts, implementing hashtables and LRU caches, C specific questions like writing a strcompare etc. Make sure you know in-depth about the projects listed in your resume, strong C/C++ programming skills a big plus, good understanding of Operating system concepts like process/threads/paging/synchronizations, Distributed system concepts like CAP theorem, fault tolerance, failure detectors, leader elections and be able to apply these concepts in designing a system.  
+
+================================================================
+
+Data structures (binary tree, list, graph, data manipulations etc. etc).  
+
+================================================================
+
+1.merge two link-list and sort it 2.follow up if two list have same elements you will add them twice how you fix it? 3. database and server cluster if one database server is crash, how do you keep the client access normally once the database server recovery how you rebuild the data 4. database access use locker 5. how do you partition for custom  
+
+================================================================
+
+1. Check whether the tree is binary tree or not. 2. find number in monotonically increasing and decreasing number sequence. 3. Given array find two numbers which sum upto third number. in O(n) with O(n) space, in O(nlogn) with constant space. 4. Given expression with only + and * operators and operands, solve the equation in O(n).  
+
+================================================================
+
+Designing Lock Free Data Structure Q3. memcopy/Memove in C Q4. Simplify linux path Q5. Distance b/w 2 nodes in a binary tree and few more  
+
+=================================================================
+Given a string, write code to rotate the the string in-place. That means without any extra buffer. Come up with three different ways of doing so.  
+
+Design and implement File Cache  
+
+===================================
+Explain condition variables, how would you implement a fair mutex
+
+=====================================
+If we connect two laptops using a router then which routing algorithm will be best
+
+=====================================
+
+
