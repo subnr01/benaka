@@ -1,0 +1,67 @@
+Bloomberg
+
+Design a stack to look for min element in O(1).
+why database is better than creating text files
+Hash tables with key and value to be a binary tree
+Write a function to return a histogram of character frequency from a string.  
+print uncle nodes in a tree
+Difference between hash map, tree map and linked hash map, paranthesis validation
+Describe how hash map works
+Find the shortest path from one corner of the matrix to another
+how do you hold the 8 most frequently viewed URLs. Implement a delete and undo feature for these similar to the one in Chrome.  
+Tic Tac Toe game
+smart pointers, polymorphism
+Two numbers occured once, every number occured twice
+Given a vector, remove min and max and calculate the average
+Given array of numbers, find the 2 largest numbers in the array
+designing a data structure that stores counts of words in a text file as well as every line.  
+Finding islands in a grid
+paranthesis matching
+Given an array of integers, delete the max and min numbers (both could appear more than once) in place. Do it in O(n) without shifting.
+Garbage collection?
+difference between C++ and java
+Paint question
+Design a publisher-subscriber event-based system that alerts the subscribers on stock price changes. Allow the subscribers to subscribe for rolling statistics as well. Optimize this as much as possible.
+Implement a cache (hash table) put and get in C  
+Recursion problem for shading in a figure  
+Develop a heap class that supports max()  
+Intersection point for k linkedlists
+Design a database for a car rental system.  
+How would you know if a double has four decimal places?  
+Design an iterator class for BST
+Convert decimal to hex
+Find kth largest element in a sorted 2D array
+Convert string to number
+Algorithm to compress strings (aaabbc -> a3b2c1).  
+Understanding of OOP
+Given a number, find the next smallest palindrome larger than the number. For example if the number is 125, next smallest palindrome is 131
+Given two link lists, return the longest common postfix. Given a Queue, write a function which every 5 seconds reads a value from the queue. and many other  
+How to find K min elements from an unsorted array of integers.
+
+1. Implement vectors in c++ 2. Difference between vectors in stl and arraylist in java 3. You have a sorted array with duplicates. Return the leftmost index of the given value. 4. What's the use of templates in c++ when you can be using objects for everything? 5. When do you get a stack overflow? Can you give a size to the stack? 6. Showed me a template definition from c++ library. Asked me what the InputIterator type is. 7. What happens beneath an asynchronous process? 8. What is the difference between a class template and a function template in c++?  
+
+How to implement shared pointer
+
+Gave me some code with a base and derived class with some mistakes that I had to find, like a non-declared and thus non-virtual destructor.  
+Print matrix in a spiral way
+Reverse an integer
+Find the second smallest element in a BST
+Reverse a linked list with O(1) space
+Print the path between two nodes in a BST
+given an integer input stream, and more and more integers are still going in. build an algorithm to return 3 minimum integers at any point of time.  
+Group strings in vector by anagrams  
+what nearly all stl functions have in common? (iterators as arg) 
+What data structure would you use to display stocks, given that they are continuously updating and you only want to show 5 on the screen at a time?  
+Given a real-time list of traded stocks, need to get the last N (arbitrary) unique traded stocks. Write addTrade(string ticker) and getLastNUnique(int n) functions with efficient runtime. 
+Implement square root
+How will you impelment C++ auto pointer
+Remove duplicates from an unsorted singly linked list.
+ system design is tiny url design.  
+Design a data structure that permits insertion of keys and a lookup of the top k most inserted keys. 
+You have a matrix of size nxn, you have to print the diagonal elements of matrix starting from the corner [n,n] then [n,n-1], [n-1,n] then [n,n-2],[n-1,n-1],[n-1,n]........ upto [0,0].
+How do you write an algorithm to count all subsets of strings in a string. 
+ Longest common subsequence, and max Value Path in a grid, they were both Dynamic Programming.  
+How to implement a spell checker
+Design an elevator system
+
+
