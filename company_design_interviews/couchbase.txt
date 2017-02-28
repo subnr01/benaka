@@ -1,0 +1,12 @@
+
+
+One interviewer asked a fairly broad design question, basically about designing a memory-manager with support for paging to disk, and then narrowed the scope of the question as I talked about and whiteboarded alternatives for implementing it.  
+
+Another question was an interesting pseudocode question about a particular hybrid linked-list/tree data-structure. First, a direct request to write pseudocode (or whichever language is preferred) to flatten the structure into a "normal" linked list, and then a follow-up question about options to retain the non-flattened structure at the same time.
+
+wo of the interviewers asked string-parsing questions. One was a fairly standard C coding questions about reversing the order of the words in a sentence. Another was about parsing a list/stream of strings being received over the network, which also involved a little bit of design about the protocol for encoding of the strings over-the-wire.
+
+One of the interviewers probed about broader topics and my approaches to things like code quality, testing, and managing dependencies and resources.  
+
+One interviewer asked me to describe a recent project I had worked on in detail, and asked a bunch of follow-on questions related to it. 
+
