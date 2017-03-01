@@ -43,3 +43,54 @@ Follow ups included exploring potential concurrency issues and how would you fix
 
 
 how to design a web counter that returns number of visitors in last 5 mins 
+
+Deduplication from a file system in any programming language of your choice  
+
+Find all duplicate files by content in your filesystem. 
+
+Implement two functions that assign/release unique id's from a pool. Memory usage should 
+be minimized and the assign/release should be fast, even under high contention. 
+
+
+Question was "Given a pattern and a string input - find if the string follows the same pattern 
+and return 0 or 1.
+Examples:
+1) Pattern : "abba", input: "redblueredblue" should return 1.
+2) Pattern: "aaaa", input: "asdasdasdasd" should return 1.
+3) Pattern: "aabb", input: "xyzabcxzyabc" should return 0.  
+
+1. Design a link shortening URL system. Discuss the tradeoffs of different approaches.
+
+2. (Coding) Write a basic file system and implement the commands ls, pwd, mkdir, create, rm, cd, cat, mv. 
+This was done on my own computer, in the interview room, with a 1.5 hour time limit.  
+
+http://blog.gainlo.co/index.php/2016/09/12/dropbox-interview-design-hit-counter/?utm_source=glassdoor&utm_campaign=glassdoor&utm_medium=92116
+
+Given an array of integers eg [1,2,-3,1] find whether there is a sub-sequence that sums to 0 and return 
+it (eg 1,2,-3 or 2,-3,1)
+
+How do you implement a dictionary tree? 
+
+Implement a function that searches a file system for files with identical contents. 
+
+Design a spell checking algorithm
+
+You have a number of meetings (with their start and end times). You need to schedule
+them using the minimum number of rooms. Return the list of meetings in every room. 
+
+Design an LRU cache. It's a data struct with a capacity. Beyond this capacity the least recently 
+used item is removed. You should be able to insert an element, access an element given its key, 
+and delete an element, in constant time. Note that when you access an element, even if it's just 
+for a read, it becomes the most recently used.
+
+
+
+
+
+
+
+
+
+
+
+
