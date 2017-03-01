@@ -10,3 +10,36 @@ same content in a similar array?
 
 Write a server side function to record the number of hits a page has and another function to return 
 the number of hits in the last 5 minutes.  
+
+
+Write a web crawler (follow up question: make it multithreaded)  
+
+Develop a system to count web hits in the last 5 minutes 
+
+
+Question was "Given a pattern and a string - find if the string follows the same pattern
+Eg: Pattern : [a b b a], String : cat dog dog cat "
+
+
+Simple situation about Dropbox file syncing.
+Grouping same file in folder  
+
+implement a function that returns the number of visit in the most recent 10 minutes, and a log function 
+to be called every time there is a new visit.  
+
+
+Design an ID allocator which can allocate and de-allocate from a range of 1-1,000,000
+
+
+How to find duplicate files in storage  
+
+Multi-threaded token bucket algorithm  
+
+Frenemy: Find if a given string matches any path in a labeled graph. A path may contain cycles
+
+
+you are building a website and how would you count the number of visitors for the past 5 min. 
+Follow ups included exploring potential concurrency issues and how would you fix it.  
+
+
+how to design a web counter that returns number of visitors in last 5 mins 
