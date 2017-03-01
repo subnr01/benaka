@@ -1,3 +1,8 @@
 
 
-Write code to track hits for a web server. Implement methods to track a hit as well as once to return the hit count for the last 5 minutes  
+Write code to track hits for a web server. Implement methods to track a hit as well as once to return 
+the hit count for the last 5 minutes  
+
+
+How could you group files in nested directories (like a multidimensional array) and group files of the 
+same content in a similar array?  
