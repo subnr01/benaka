@@ -1,4 +1,6 @@
 Design a hash table for a distributed system.  
+http://stackoverflow.com/questions/144360/simple-basic-explanation-of-a-distributed-hash-table-dht
+
 
 Given two arrays which are sorted, find out the median of the two sorted arrays.  
 
