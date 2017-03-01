@@ -1,0 +1,4 @@
+Design a hash table for a distributed system.  
+
+Given two arrays which are sorted, find out the median of the two sorted arrays.  
+
