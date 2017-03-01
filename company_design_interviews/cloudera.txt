@@ -1,0 +1,25 @@
+Implementation of thread safe queue 
+
+implement file integrator  
+
+Given two arrays of unbounded length, return the sum of the minimum values of both.  
+
+Given a two dimensional bitmap with a number of bits set, return the number of contiguous regions.  
+
+Connected Components of a graph, dictionary valid letter Combinations of a Phone Number, linux basics, 
+common ancestor in a binary tree, sql questions  
+
+Multithreading operations on the binary tree.  
+
+1TB of data on my laptop --&gt; sort the data  
+
+Distributed Merge Sort algorithm 
+
+A file contains a billion integers, try to find any one integer that is not in the file.  
+
+Design a whole tiny url type of system (front end, back end, db, ...)  
+
+
+How would you implement hash table on your own? Write the code for implementing your own hash table?
+
+
