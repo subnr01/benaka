@@ -6,3 +6,7 @@ the hit count for the last 5 minutes
 
 How could you group files in nested directories (like a multidimensional array) and group files of the 
 same content in a similar array?  
+
+
+Write a server side function to record the number of hits a page has and another function to return 
+the number of hits in the last 5 minutes.  
