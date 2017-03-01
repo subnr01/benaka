@@ -4,3 +4,24 @@ http://stackoverflow.com/questions/144360/simple-basic-explanation-of-a-distribu
 
 Given two arrays which are sorted, find out the median of the two sorted arrays.  
 
+Given an array as input find the output array that has median of each sub array whose index starts from 0 to i(i = 1,2...array.length-1).
+
+Remove duplicates in an unsorted array where the duplicates are at a distance of k or less from each other. 
+
+Flip a matrix.
+
+give you a graph and two vertices and return if there exists a path between them
+
+Determine whether a cycle exists
+
+Given an unsorted list of integers, return true if the list contains any duplicates within k indices of each element. Do it faster than O(n^2). 
+
+Give 3 distinct algorithms to find the K largest values in a list of N items.  
+
+Implement external mergesort given text file of numbers.
+
+
+Given a string of integers of undefined length, how would you choose an element uniformly at random using only a constant amount of space? How would you prove that your algorithm is correct?  
+
+Do a binary tree traversal with constant memory (no stacks).
+
