@@ -1,1 +1,11 @@
-https://github.com/kolaveridi
+https://github.com/kolaveridi (topcoder)
+
+
+Google interview preparation:
+
+https://github.com/andreis/interview
+https://github.com/rohitkrai03/google-interview-university
+http://neethack.com/2012/02/amazon-interview/
+
+http://www.catonmat.net/blog/my-job-interview-at-google/
+http://shlegeris.com/2016/08/14/algorithms
