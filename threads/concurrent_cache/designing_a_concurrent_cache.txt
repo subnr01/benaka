@@ -1,0 +1,10 @@
+
+
+http://openmymind.net/High-Concurrency-LRU-Caching/
+http://stackoverflow.com/questions/18968981/high-frequent-concurrency-for-cache
+http://web.mit.edu/6.826/www/notes/HO30.pdf
+http://www.ebaytechblog.com/2011/08/30/high-throughput-thread-safe-lru-caching/
+http://highscalability.com/blog/2016/1/25/design-of-a-modern-cache.html
+https://github.com/ben-manes/concurrentlinkedhashmap
+
+
