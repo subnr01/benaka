@@ -1,2 +1,3 @@
 https://cse.sc.edu/~wyxu/515Fall08/slides/advanced_socket.pdf
 http://www.cs.wustl.edu/~schmidt/PDF/concurrent_daemons4.pdf
+http://berb.github.io/diploma-thesis/original/042_serverarch.html
