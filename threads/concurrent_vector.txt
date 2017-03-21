@@ -1,0 +1,3 @@
+http://www.stroustrup.com/lock-free-vector.pdf
+
+https://juanchopanzacpp.wordpress.com/2013/06/02/concurrent-object-wrapper-part-ii/
