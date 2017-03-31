@@ -1,0 +1,39 @@
+
+
+Peterson's algorithm (AKA Peterson's solution) is a 
+concurrent programming algorithm for mutual exclusion 
+that allows two processes to share a single-use resource
+ without conflict, using only shared memory for communication.
+
+Mutual exclusion
+Progress
+Bounded Waiting
+
+
+bool flag[0]   = false;
+bool flag[1]   = false;
+int turn;
+
+
+P0:      flag[0] = true;
+P0_gate: turn = 1;
+         while (flag[1] && turn == 1)
+         {
+             // busy wait
+         }
+         // critical section
+         ...
+         // end of critical section
+         flag[0] = false;
+
+
+P1:      flag[1] = true;
+P1_gate: turn = 0;
+         while (flag[0] && turn == 0)
+         {
+             // busy wait
+         }
+         // critical section
+         ...
+         // end of critical section
+         flag[1] = false;
