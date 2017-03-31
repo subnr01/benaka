@@ -1,0 +1,26 @@
+Process vs thread
+=====================
+
+
+
+
+User thread vs kernel thread
+=================================
+
+
+
+
+Mutex vs semaphore
+=======================
+
+
+
+
+
+
+
+
+
+
+How conditional variables work
+===================================
