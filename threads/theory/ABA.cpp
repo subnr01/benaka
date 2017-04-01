@@ -89,4 +89,14 @@ Now the stack is top → A → C
 When Thread 1 resumes:
 
  compare_exchange_weak(A, B)
-This instruction succeeds because it finds top == ret (both are A), so it sets top to next (which is B). As B has been deleted the program will access freed memory when it tries to look the first element on the stack. In C++, as shown here, accessing freed memory is undefined behavior: this may result in crashes, data corruption or even just silently appear to work correctly. ABA bugs, such as this, can be difficult to debug.
+This instruction succeeds because it finds top == ret (both are A), so it sets top to next (which is B). As 
+B has been deleted the program will access freed memory when it tries to look the first element on the stack. 
+In C++, as shown here, accessing freed memory is undefined behavior: this may result in crashes, data corruption
+or even just silently appear to work correctly. ABA bugs, such as this, can be difficult to debug.
+     
+     
+     
+     
+     
+     
+     
