@@ -1,1 +1,22 @@
 
+http://stackoverflow.com/questions/26583433/c11-implementation-of-spinlock-using-atomic
+
+http://anki3d.org/spinlock/
+
+
+http://demin.ws/blog/english/2012/05/05/atomic-spinlock-mutex/
+
+https://nahratzah.wordpress.com/2012/10/12/a-trivial-fair-spinlock/
+
+http://stackoverflow.com/questions/30691135/basic-spin-lock-mutex-implementation-ordering
+
+
+http://preshing.com/20120226/roll-your-own-lightweight-mutex/
+
+https://www.quora.com/What-is-the-effective-spin-lock-implementation-on-Linux
+
+https://hackernoon.com/building-a-c-hybrid-spin-mutex-f98de535b4ac
+
+Reference
+https://jfdube.wordpress.com/2014/01/03/implementing-a-recursive-read-write-spinlock/
+https://www.cs.princeton.edu/courses/archive/fall08/cos318/lectures/Lec6-MutexImplementation.pdf
