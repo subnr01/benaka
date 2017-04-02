@@ -1,0 +1,4 @@
+https://kukuruku.co/post/lock-free-data-structures-memory-model-part-3/
+
+
+http://blog.memsql.com/common-pitfalls-in-writing-lock-free-algorithms/
