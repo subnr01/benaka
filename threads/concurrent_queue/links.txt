@@ -1,1 +1,5 @@
 https://news.ycombinator.com/item?id=7815627
+
+https://www.quora.com/What-are-the-most-commonly-used-thread-safe-queue-implementations-in-C++
+
+
