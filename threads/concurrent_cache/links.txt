@@ -1,0 +1,14 @@
+http://openmymind.net/High-Concurrency-LRU-Caching/
+
+http://stackoverflow.com/questions/40239485/concurrent-lru-cache-implementation
+
+http://stackoverflow.com/questions/15634795/lru-caching-multithreading
+
+http://stackoverflow.com/questions/30129960/lru-cache-implementation-in-java
+
+https://www.codeproject.com/Articles/23396/A-High-Performance-Multi-Threaded-LRU-Cache
+
+
+
+http://highscalability.com/blog/2016/1/25/design-of-a-modern-cache.html
+
