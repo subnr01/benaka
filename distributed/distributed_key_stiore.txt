@@ -15,3 +15,13 @@ https://medium.com/@siddontang/build-up-a-high-availability-distributed-key-valu
 https://medium.com/@manishrjain/technical-interviews-open-ended-design-questions-ea7fff3486a7
 
 http://pages.cs.wisc.edu/~chasseur/kvstore/design_doc.pdf
+
+https://www.careercup.com/question?id=8706680
+
+http://codecapsule.com/2013/04/03/implementing-a-key-value-store-part-4-api-design/
+
+
+good
+http://horicky.blogspot.com/2009/11/nosql-patterns.html
+
+
