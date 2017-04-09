@@ -1,0 +1,17 @@
+http://blog.gainlo.co/index.php/2016/06/14/design-a-key-value-store-part-i/
+
+https://www.quora.com/What-are-good-ways-to-design-a-distributed-key-value-store
+
+http://blog.fourthbit.com/2015/04/12/building-a-distributed-fault-tolerant-key-value-store
+
+http://codecapsule.com/2012/11/07/implementing-a-key-value-store-part-1-what-are-key-value-stores-and-why-implement-one/
+
+http://www-inst.eecs.berkeley.edu/~cs162/fa12/phase4.html
+
+
+https://medium.com/@siddontang/build-up-a-high-availability-distributed-key-value-store-b4e02bc46e9e
+
+
+https://medium.com/@manishrjain/technical-interviews-open-ended-design-questions-ea7fff3486a7
+
+http://pages.cs.wisc.edu/~chasseur/kvstore/design_doc.pdf
