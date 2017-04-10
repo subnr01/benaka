@@ -1,7 +1,7 @@
 
-
+----------
 Vectors:
-
+----------
 Vectors are sequence containers representing arrays that can change in size.
 Some key points:
 -- random access
