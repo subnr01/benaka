@@ -1,0 +1,30 @@
+tableau glassdoor interview questions
+
+
+Clone a graph
+
+Design a car rental system
+
+Delete a complete binary tree
+
+
+Maze problem
+
+Design a sudoku game
+
+Difference between linked list, tree, and hash map. Create a stream reader in C++ that consolidates multiple different stream inputs.  
+
+Explain and implement a serialization of a binary tree.  
+
+Implement malloc (not free) using some given function pagemalloc  
+
+
+Code an iterator that returns the in-order traversal of a binary tree.  
+
+Find the top 1000 most frequent words in a text file, with better than O(nlogn) complexity, tree traversal problem.  
+
+Find the smallest unique integer in a random integer array with possible duplicates.  
+
+a maze question that ask you to get out of the maze  
+
+Implement a binary search tree for floating-point values.  
