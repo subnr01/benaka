@@ -77,7 +77,9 @@ Examples
  }
  
  
-    
+ Questions:
+
+1. When to use priority queue vs push_heap?
         
 
 
