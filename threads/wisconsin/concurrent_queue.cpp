@@ -1,3 +1,5 @@
+http://stackoverflow.com/questions/37369031/two-lock-concurrent-queue-algorithm-issue
+
 typedef struct __node_t {
     int                 value;
     struct __node_t    *next;
