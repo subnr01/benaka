@@ -5,6 +5,25 @@
  *   Sort distinct integers in the range [0..N-1]
  */
 
+
+/*
+Some important things:
+
+a[1 + N/BITSPERWORD] is the size of the array required to represent the numbers.
+
+a[i>>SHIFT] gives you the index in a, where i will be represented in the bits position. 
+For example, when i = 15, then it is represented in  i/32 i.e is 0th index (a[0])
+when i is 63, then it is represented by i/32 i.e is 1st index (a[1])
+(1<<(i & MASK) gives the bit position in the 32 byte. 63 will be 31st byte and when this 
+is ORed with a[i>>SHIFT], we set the 31st byte in a[1].
+
+When we test, we get the bit postion of i, and then perform the reverse operation of what we did prior.
+a[i>>SHIFT] &   (1<<(i & MASK));
+
+
+
+*/
+
 #include <stdio.h>
 
 #define BITSPERWORD 32
