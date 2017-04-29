@@ -25,7 +25,8 @@ Let us make some set of assumptions:
 
 3. Calling between machines is relatively quick.
 
-4. The result for a given query is an ordered list of URLs, each of which has an associated 50 character title and 200 character summary.
+4. The result for a given query is an ordered list of URLs, each of which has an associated
+   50 character title and 200 character summary.
 
 5. The most popular queries are extremely popular, such that they would always appear in the cache.
 
@@ -59,6 +60,65 @@ Step 2: Expand to many machines
 Now that we understand how to design this for a single machine, we need to understand how we would design 
 this when queries could be sent to many different machines.
 
+
+The first thing we need to decide is to what extent the cache is shared across machines. 
+We have several options to consider.
+
+Option 1: Each machine has its own cache. ( less effective)
+
+Option 2: Each machine has a copy o f the cache. ( too much space and time overhead)
+
+Option 3: Each machine stores a segment ofthe cache.
+
+
+The third option is to divide up the cache, such that each machine holds a different part of it. 
+Then, when machine i needs to look up the results for a query, machine i would figure out which machine 
+holds this value, and then ask this other machine (machine j) to look up the query in j's cache.
+
+But how would machine i know which machine holds this part of the hash table?
+One option is to assign queries based on the formula hash (query) % N.Then, machine i 
+only needs to apply this formula to know that machine j should store the results for this query.
+50, when a new query comes in to machine i, this machine would apply the formula and call out to machine j. 
+Machine j would then return the value from its cache or call process5earch(query) to get the results. 
+Machine j would update its cache and return the results back to i.
+
+
+Step 3: Updating when contents change
+--------------------------------------------------
+To answer this question, we need to consider when results would change (and you need to discuss this with your interviewer). 
+
+The primary times would be when:
+1. The content at a URL changes (or the page at that URL is removed).
+2. The ordering of results change in response to the rank of a page changing. 
+3. New pages appear related to a particular query.
+
+To handle situations #1 and #2, we could create a separate hash table that would tell us which cached 
+queries are tied to a specific URL. This could be handled completely separately from the other caches,
+and reside on different machines. However, this solution may require a lot of data.
+Alternatively, if the data doesn't require instant refreshing (which it probably doesn't), we could 
+periodically crawl through the cache stored on each machine to purge queries tied to the updated URLs.
+Situation #3 is substantially more difficult to handle. We could update single word queries by parsing 
+the content at the new URL and purging these one-word queries from the caches. But, this will only handle 
+the one-word queries.
+
+A good way to handle Situation #3 (and likely something we'd want to do anyway) is to implement an 
+"auto- matic time-out" on the cache. That is, we'd impose a time out where no query, rega rdless of 
+how popular it is, can sit in the cache for more than x minutes.This will ensure that all data is 
+periodically refreshed.
+
+Step 4: Further Enhancements
+--------------------------------------
+One such optimization is to better support the situation where some queries are very popular. 
+For example, suppose (as an extreme example) a particular string constitutes 1% of all queries. 
+Rather than machine i forwarding the request to machine j every time, machine i could forward the
+request just once to j , and then i could store the results in its own cache as well.
+
+Another optimization we could make is to the "automatic time out" mechanism. As initially described, this mechanism
+purges any data after X minutes. However, we may want to update some data (like current news) much more frequently 
+than other data (like historical stock prices). We could implement timeouts based on topic or based on URLs. In the
+latter situation, each URL would have a time out value based on how 
+frequently the page has been updated in the past. The time out for the query would be the minimum of the time outs
+for each URL.
 
 
 
