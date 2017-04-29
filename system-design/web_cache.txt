@@ -14,6 +14,62 @@ cache the results of the most recent queries. Be sure to explain how you would u
 
 
 
+Assumptions
+--------------
+
+Let us make some set of assumptions:
+
+1. all query processing happens on the initial machine that was called.
+
+2. The number of queries we wish to cache is large (millions).
+
+3. Calling between machines is relatively quick.
+
+4. The result for a given query is an ordered list of URLs, each of which has an associated 50 character title and 200 character summary.
+
+5. The most popular queries are extremely popular, such that they would always appear in the cache.
+
+
+System Requirements
+---------------------
+
+1. Effecient lookup
+
+2. Expiration of old data.
+
+3. Efficient update and clearing the cache when the results change.
+
+
+Step 1: Design cache for a single system
+--------------------------------------------
+
+Cache design on a single machine could be designed using a linked list, as linked list
+allows for easy purging of old data. Fresh items can be accessed in the front of the list
+while old items can be pushed to the end of the list to be removed eventually.
+
+A hash table would enable efficient lookups while purging of data will be be inefficient.
+
+A good design can be developed by merging both hash table and the linked list. Hash table should 
+map a query to the corresponding node in the linked list.
+
+
+Step 2: Expand to many machines
+--------------------------------------------
+
+Now that we understand how to design this for a single machine, we need to understand how we would design 
+this when queries could be sent to many different machines.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
