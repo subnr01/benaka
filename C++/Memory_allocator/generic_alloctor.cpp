@@ -83,3 +83,25 @@ int n; // Numerator
 int d; // Denominator
 static MemoryPool <Rational> *memPool;
 };
+
+
+MemoryPool <Rational> *Rational::memPool = 0;
+int main()
+{
+...
+Rational *array[1000];
+Rational::newMemPool();
+// Start timing here
+for (int j = 0; j < 500; j++) {
+for (int i = 0; i < 1000; i++) {
+array[i] = new Rational(i);
+}
+for (i = 0; i < 1000; i++) {
+delete array[i];
+}
+}
+// Stop timing here
+Rational::deleteMemPool();
+...
+}  
+  
