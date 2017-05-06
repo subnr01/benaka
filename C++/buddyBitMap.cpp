@@ -1,5 +1,0 @@
-
-/* 
-Buddy Bitmap
-
-*/
