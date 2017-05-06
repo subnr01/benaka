@@ -1,21 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @subnr01
- Sign out
- Watch 9
-  Star 31
-  Fork 13 jasonfeng1989/Tech_Interviews
- Code  Issues 2  Pull requests 0  Projects 0  Wiki  Pulse  Graphs
-Branch: master Find file Copy pathTech_Interviews/others/buddy_bitmap.py
-9126f04  on Jan 18, 2016
-@jasonfeng1989 jasonfeng1989 add frog, IDManger and bitmap
-1 contributor
-RawBlameHistory     
-83 lines (74 sloc)  2.54 KB
 ''' pure storage buddy system bitmap
     Given a complete binary tree with nodes of values of either 1 or 0, the following rules always hold:
     (1) a node's value is 1 if and only if all its subtree nodes' values are 1
@@ -99,5 +81,3 @@ if __name__=='__main__':
         clear_bit(A,pos, length)
         print 'after clearing bit from ', pos, 'for ', length,'A is: ', A
         
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Security Status Help
