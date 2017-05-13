@@ -31,3 +31,6 @@ Coding websites:
 8. Google code
 9. InterviewBit
 
+In what order must I do this.
+
+Codechef, hackerrank etc.
