@@ -9,3 +9,7 @@ https://www.quora.com/How-do-I-improve-system-design-skills-for-Google-Interview
 https://stackoverflow.com/questions/796867/how-to-improve-software-design-skills
 
 https://softwareengineering.stackexchange.com/questions/21623/how-to-improve-skills-in-software-architecture
+
+https://www.stevepavlina.com/blog/2006/08/10-ways-to-improve-your-technical-skills/
+
+https://softwareengineering.stackexchange.com/questions/170003/my-proposed-design-is-usually-worse-than-my-colleagues-how-do-i-get-better
