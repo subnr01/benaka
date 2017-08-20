@@ -30,6 +30,7 @@ Coding websites:
 7. Project Euler
 8. Google code
 9. InterviewBit
+10.CodeRust
 
 In what order must I do this.
 
