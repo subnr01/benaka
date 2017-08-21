@@ -1,0 +1,30 @@
+The below mentioned resources/procedures are for Technical/Programming Interviews, applicable for most Product Based Companies/Tech Startups.(Google & the Big 4)
+
+Competitive Coding :-
+Topcoder :
+Div 2 - 250, 500.
+Div 1 - 250.
+Note : Div 2 500 & Div 1 250 are almost equivalent.
+
+Codeforces :
+Div 2 - A, B, C.
+Div 1 - A.
+Note : Div 2 C & Div 1 A are almost equivalent.
+
+CodeChef :
+Beginner
+Easy
+Medium
+Note :
+
+Topcoder - Div 2 250 = CodeForces - Div 2 A, B = Codechef - Beginner, Easy. (Respectively)
+Topcoder - Div 2 500 = CodeForces - Div 2 C = Codechef - Medium.
+Topcoder - Div 1 250 = CodeForces - Div 1 A = Codechef - Medium.
+
+
+Interview Bit - InterviewBit Courses - InterviewBit
+Leet Code - LeetCode Online Judge
+Career Cup - Programming Interview Questions | CareerCup
+Geeks For Geeks - GeeksforGeeks | A computer science portal for geeks
+Hacker Rank - HackerRank
+Hacker Earth - HackerEarth - Programming challenges and Developer job
