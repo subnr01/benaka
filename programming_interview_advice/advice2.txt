@@ -1,0 +1,25 @@
+Absolutely critical:
+How To Dissect a TopCoder Problem Statement
+How To Find a Solution
+Planning an Approach to a TopCoder Problem, Part 1
+Planning an Approach to a TopCoder Problem, Part 2
+The Best Questions for Would-be C++ Programmers, Part 1
+The Best Questions for Would-be C++ Programmers, Part 2
+Priority 1 (Must do):
+Mathematics for TopCoders
+Dynamic Programming: From novice to advanced
+Data Structures
+Sorting
+Binary Search
+Introduction to String Searching Algorithms
+Power up C++ with the Standard Template Library: Part I
+Introduction to graphs and their data structures: Section 1
+Introduction to graphs and their data structures: Section 2
+Computational Complexity: Section 1
+Computational Complexity: Section 2
+Priority 2 (Nice to read):
+A bit of fun: fun with bits
+The Importance of Algorithms
+Introduction to graphs and their data structures: Section 3
+Algorithm Games
+Greedy is Good
