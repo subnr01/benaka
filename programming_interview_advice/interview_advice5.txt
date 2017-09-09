@@ -4,3 +4,12 @@ interview cheat sheet:
 
 
 https://gist.github.com/TSiege/cbb0507082bb18ff7e4b
+
+
+https://www.quora.com/How-can-I-get-a-job-at-Facebook-or-Google-in-6-months-I-need-a-concise-work-plan-to-build-a-good-enough-skill-set-Should-I-join-some-other-start-up-or-build-my-own-projects-start-up-Should-I-just-focus-on-practicing-data-structures-and-algorithms/answer/Jimmy-Saade
+
+https://www.quora.com/What-are-the-most-important-concepts-in-C-and-C++-that-should-be-learnt-and-understood-before-a-programming-interview/answer/Jimmy-Saade?share=1&srid=TAJ1
+
+https://www.quora.com/What-should-I-know-from-the-CLRS-3rd-edition-book-if-my-aim-is-to-get-into-Google/answer/Jimmy-Saade
+
+https://github.com/jwasham/coding-interview-university
