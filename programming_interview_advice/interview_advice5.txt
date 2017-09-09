@@ -13,3 +13,6 @@ https://www.quora.com/What-are-the-most-important-concepts-in-C-and-C++-that-sho
 https://www.quora.com/What-should-I-know-from-the-CLRS-3rd-edition-book-if-my-aim-is-to-get-into-Google/answer/Jimmy-Saade
 
 https://github.com/jwasham/coding-interview-university
+
+
+http://nodir.io/post/79121611709/google
