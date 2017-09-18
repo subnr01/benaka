@@ -44,6 +44,71 @@ Example:
  ASSERT(table.size()) == 0);
 */
 
+template<typename DATA,
+         int BUCKETCOUNT,
+         endolist_node DATA::*NODENAME = &DATA::node>
+class endohash : private Noncopyable {
+{
+protected:
+    typedef endolist<DATA,NODENAME> BUCKET;
+    
+public:
+    endohash() {
+      _count=0;
+    }
+    
+    size_t size() const
+    {
+       return _count;
+    }
+    
+    void insert (DATA& obj) 
+    {
+       BUCKET& bucket = _buckets[ obj.hash() % BUCKETCOUNT ];
+       bucket.push_front(obj);
+       _count++;
+    }
+    
+    void erase (DATA& obj) 
+    {
+       BUCKET& bucket = _buckets[ obj.hash() % BUCKETCOUNT ];
+       bucket.erase(obj);
+       _count--;
+    }
+    
+    void touch (DATA &obj)
+    {
+       BUCKET& bucket = _buckets[ obj.hash() % BUCKETCOUNT ];
+       if ( &(bucket.front() != &obj) {
+           bucket.erase(obj);
+           bucket.push_front(obj);
+       }
+    }
+    
+    DATA* find (const DATA &ref)
+    {
+       BUCKET& bucket = _buckets[ ref.hash() % BUCKETCOUNT ];
+       for (typename BUCKET::iterator ii = bucket.begin(); ii != bucket.end(); ii++) 
+       {
+           if (*ii == ref)
+           {
+              return &*ii;
+           }
+       }
+       return NULL;
+    }
+
+
+        
+        
+      
+    
+    
+    
+    
+    
+    
+
 
 
 
