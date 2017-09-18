@@ -1,0 +1,11 @@
+/*
+
+Basically explore the design how flexgroup error reporting works
+today.
+
+This document must give a high level design.
+
+Must be able to explain how flexgroup error reporting works
+on looking at this file
+
+*/
