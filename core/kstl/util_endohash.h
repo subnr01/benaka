@@ -99,8 +99,25 @@ public:
     }
 
 
-        
-        
+    const DATA* find (const DATA &ref) const
+    {
+       const BUCKET& bucket = _buckets[ ref.hash() % BUCKETCOUNT ];
+       for (typename BUCKET::const_iterator ii = bucket.begin(); ii != bucket.end(); ii++) 
+       {
+           if (*ii == ref)
+           {
+              return &*ii;
+           }
+       }
+       return NULL;
+    }
+    
+protected:
+    BUCKET _buckets[BUCKETCOUNT];    
+    size_t _count;
+};
+
+    
       
     
     
