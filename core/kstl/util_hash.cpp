@@ -34,6 +34,54 @@
   here .
   */
   
-  static const uint32_t 
+static const uint32_t fnv_const_offset_basis_32 = 2166136261ULL;
+static const uint64_t fnv_const_offset_basis_64 = 14695981039346656037ULL;
   
+static const uint32_t fnv_const_prime_32 = 16777619ULL;
+static const uint64_t fnv_const_prime_64 = 1099511628211ULL;
+
+uint32_t util_hash_fnv_la_32(const uint8_t *data, uint64_t len)
+{
+  return util_hash_fnv_la_32_inc(data, len, 0);
+}
+
+uint64_t util_hash_fnv_la_64(const uint8_t *data, uint64_t len)
+{
+  return util_hash_fnv_la_32_inc(data, len, 0);
+}
+
+uint32_t util_hash_fnv_la_32_inc(const uint8_t *data, const uint64_t len, uint32_t *hashp)
+{
+  uint32_t hash = hashp? *hashp: fnv_const_offset_basis_32;
   
+  for( uint64_t i = 0; i < len; i++)
+  {
+    hash ^= (uint32_t) data[i];
+    hash *= fnv_const_prime_32;
+  }
+  
+  if (hashp)
+  {
+    *hashp = hash;
+  }
+  return hash;
+}
+
+
+extern "C"
+uint64_t util_hash_fnv_la_64_inc(const uint8_t *data, const uint64_t len, uint64_t *hashp)
+{
+  uint64_t hash = hashp? *hashp: fnv_const_offset_basis_64;
+  
+  for( uint64_t i = 0; i < len; i++)
+  {
+    hash ^= (uint64_t) data[i];
+    hash *= fnv_const_prime_64;
+  }
+  
+  if (hashp)
+  {
+    *hashp = hash;
+  }
+  return hash;
+}
