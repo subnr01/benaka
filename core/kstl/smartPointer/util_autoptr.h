@@ -100,6 +100,10 @@ class AutoPtr
   
 };
 
+/*
+Class that allows implicit conversions for copying and
+assignment of auto_ptr's between each other
+*/
 
 template<class T>
 class AutoPtrRef
