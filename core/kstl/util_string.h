@@ -1,0 +1,4 @@
+/* 
+Class describing string
+
+*/
