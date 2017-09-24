@@ -35,3 +35,9 @@ https://github.com/DONGHEHUST/elevatorScheduling/tree/master/src
 https://github.com/alexakarpov/elevators
 
 https://github.com/kyuseobkim/mesosphere.interview
+
+https://github.com/donnemartin/elevator-simulator
+
+https://github.com/hannahvoelker/Elevator
+
+https://github.com/andreysay/Elevator
