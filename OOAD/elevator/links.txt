@@ -45,3 +45,5 @@ https://github.com/donnemartin/elevator-simulator
 https://github.com/hannahvoelker/Elevator
 
 https://github.com/andreysay/Elevator
+
+http://massivetechinterview.blogspot.com/2015/07/thought-works-object-oriented-design.html
