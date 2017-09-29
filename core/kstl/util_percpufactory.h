@@ -46,7 +46,7 @@ public:
  private:
   ArrayFactory<T> _arrays[PSM_PROCESSORS_MAX];
 };
-}
+
       
     
     
