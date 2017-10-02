@@ -1,0 +1,3 @@
+
+Explain different types of quota and different data structures
+in Ontap to keep track of quota accounting.
