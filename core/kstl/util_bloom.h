@@ -8,3 +8,13 @@ it will never allow false negatives.
 
 
 */
+
+namespace util 
+{
+  template<size_t BYTES, class INTTYPE> class bloomfilter;
+  template<size_t BYTES, class INTTYPE> class bloomarray;
+  enum bloomtype { BLOOMTYPE_ARRAY, BLOOMTYPE_FILTER };
+}
+
+template <size_t BYTES, class INTTYPE>
+class bloomfilter 
