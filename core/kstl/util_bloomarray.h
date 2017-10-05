@@ -85,7 +85,7 @@ class bloomarray
     private:
       char _data[BYTES];
       bloomtype _type;
-    };
+ };
   
       
     
