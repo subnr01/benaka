@@ -80,9 +80,93 @@ class bloomarray
             }
         }
         bloomfilter<BYTES, INTTYPE>::add(data, val);
+    }
+    
+    bool cintains (INTTYPE val) 
+    {
+      return contains(_data, type, val);
+    }
+      
+    static bool contains(const char* data, bloomtype type, INTTYPE val)
+    {
+      if (type == BLOOMTYPE_FILTER)
+      {
+        return bloomfilter<BYTES, INTTYPE>::contains(data, val);
       }
       
-    private:
+      uint32_t max_count = BYTES/sizeof(INTTYPE);
+      for (uint32_t index = 0; index < max_count; ++index)
+      {
+        if (val == get(data, type, index)) 
+        {
+          return true;
+        }
+      }
+      return false;
+    }
+    
+    static size_t capacity()
+    {
+      return BYTES/sizeof(INTTYPE);
+    }
+      
+    bool containsIndex(const char *data, bloomtype type, int index)
+    {
+      VERIFY(type == BLOOMTYPE_ARRAY);
+      VERIFY(index < (int) capacity());
+      return (get(data, type, index) != (INTTYPE)~0);
+    }
+      
+    bloomtype type() const
+    {
+      return _type;
+    }
+      
+    uint32_t size() const
+    {
+      return size(_data, _type);
+    }
+      
+    static uint32_t size(const char* data, bloomtype type)
+    {
+      VERIFY(type == BLOOMTYPE_ARRAY);
+      
+      uint32_t max_count = BYTES/sizeof(INTTYPE);
+      uint32_t found = 0;
+      for (uint32_t index = 0; index < max_count; ++index)
+      {
+        if (get(data, type, index) != (INTTYPE)~0)
+        {
+          ++found;
+        }
+      }
+      return found;
+    }
+    
+    INTTYPE operator[] (int index) const
+    {
+      return get(_data, _type, index);
+    }
+      
+    static INTTYPE get(const char *data, bloomtype type, int index)
+    {
+      VERIFY(type == BLOOMTYPE_ARRAY);
+      
+      uint32_t max_count = BYTES/sizeof(INTTYPE);
+      VERIFY(index < (int) max_count);
+      return ((INTTYPE*) data)[index];
+    }
+      
+    INTTYPE& operator[](int index)
+    {
+      VERIFY(type == BLOOMTYPE_ARRAY);
+      
+      uint32_t max_count = BYTES/sizeof(INTTYPE);
+      VERIFY(index < (int) max_count);
+      ((INTTYPE*) data)[index] = val;
+    }
+      
+   private:
       char _data[BYTES];
       bloomtype _type;
  };
