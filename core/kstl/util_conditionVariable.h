@@ -6,4 +6,10 @@ to suspend in critical regions, then use semaphores instead.
 
 */
 
-
+class ConditionVariable
+{
+  public:
+    ConditionVariable(const char *cvName, int flags)
+    {
+      pthread_cond_init(&_cv, NULL);
+    }
