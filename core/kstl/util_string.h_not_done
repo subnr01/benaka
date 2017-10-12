@@ -69,7 +69,7 @@ class string
     string &replace(size_type pos, size_type len1, const char *pStr, size_type len2); 
 
     
-    //Find
+    //Find 
     
 
 };
