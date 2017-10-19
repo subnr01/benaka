@@ -1,0 +1,8 @@
+
+1. Search for memory leaks
+2. Printf inside lock.
+3. lock but no unlock across functions
+4. Return type not used, so cast across functions.
+5. Insert appropriate logging
+6. Are variables initalised properly
+7. See whether there are corner cases that the implemenation does not handle (this requires functionality depth)
