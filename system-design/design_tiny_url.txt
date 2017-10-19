@@ -7,7 +7,9 @@ http://blog.wenhaolee.com/system-design-tinyurl/
 https://www.interviewcake.com/question/java/url-shortener
 http://n00tc0d3r.blogspot.com/2013/09/big-data-tinyurl.html
 https://stackoverflow.com/questions/742013/how-to-code-a-url-shortener
-
+https://www.hiredintech.com/system-design
+http://www.learn4master.com/interview-questions/system-design/system-design-interview-tinyurl-service
+https://discuss.leetcode.com/topic/95853/a-complete-solution-for-tinyurl-leetcode-system-design/2
 
 
 
