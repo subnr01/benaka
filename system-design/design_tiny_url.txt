@@ -1,0 +1,22 @@
+https://www.youtube.com/watch?v=fMZMm_0ZhK4&t=1s
+https://leetcode.com/problems/design-tinyurl/description/
+http://blog.gainlo.co/index.php/2016/03/08/system-design-interview-question-create-tinyurl-system/
+http://www.geeksforgeeks.org/how-to-design-a-tiny-url-or-url-shortener/
+https://www.interviewbit.com/problems/url-shortener/
+http://blog.wenhaolee.com/system-design-tinyurl/
+https://www.interviewcake.com/question/java/url-shortener
+http://n00tc0d3r.blogspot.com/2013/09/big-data-tinyurl.html
+https://stackoverflow.com/questions/742013/how-to-code-a-url-shortener
+
+
+
+
+Design a scalable service which supports tiny url use case.
+
+
+User will give you the long url, you have to return the short url and
+when the user gives the short url, you have to return the original long url.
+
+The question has challenges at scale.
+
+Need a scalable and durable solution
