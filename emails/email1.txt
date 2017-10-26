@@ -1,0 +1,7 @@
+Heinrich,
+ 
+Thank you for reaching out to us.  We will absolutely be willing to discuss this bug and the customer evolution of the use of quotas.  Asish is the most familiar with the problem and will be involved, but we’ll also bring in some of our more senior development engineers and likely the TD responsible for this area.   Please let me know what timeframe you’d like to have the discussion in.    Also – I’d prefer to have a NetApp only discussion first, to set expectations and make sure that we are all on the same page before including the customer.
+
+Thanks,
+Kurt Johanknecht
+Software Engineering Manager
