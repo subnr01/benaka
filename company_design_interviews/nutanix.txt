@@ -1,6 +1,8 @@
 Nutanix:
 
-level order traversal with and without recursion and using DP, few other DP based questions, tries, networking and DS questions. Design based questions, one question also on implementing a process table and killing all the child and grandchild processes once a main one was terminated.
+level order traversal with and without recursion and using DP, few other DP based questions, tries, 
+networking and DS questions. Design based questions, one question also on implementing a process 
+table and killing all the child and grandchild processes once a main one was terminated.
 
 ================================================================
 
