@@ -12,7 +12,9 @@ Maze problem
 
 Design a sudoku game
 
-Difference between linked list, tree, and hash map. Create a stream reader in C++ that consolidates multiple different stream inputs.  
+Difference between linked list, tree, and hash map. 
+
+Create a stream reader in C++ that consolidates multiple different stream inputs.  
 
 Explain and implement a serialization of a binary tree.  
 
