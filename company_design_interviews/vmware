@@ -1,9 +1,15 @@
 
 Staff engineer
 
-Design a network file system: which operations of a POSIX file system are you going to support, how would you organize the hardware, how does the communication work, how are the files stored, etc... discuss all design decisions in terms of the CAP theorem, be able to spot hot-spots and single points of failure.  
+Design a network file system: which operations of a POSIX file system 
+are you going to support, how would you organize the hardware, 
+how does the communication work, how are the files stored, etc... 
+discuss all design decisions in terms of the CAP theorem, 
+be able to spot hot-spots and single points of failure.  
 
-In a non-directed graph, count the number of subgraphs (not necessarily fully connected, just subgraphs in general). Discuss why and how you'd optimize this given different number of vertices, different density/completion of the graph, etc...  
+In a non-directed graph, count the number of subgraphs (not necessarily fully connected, just subgraphs in general). 
+Discuss why and how you'd optimize this given different number of vertices, 
+different density/completion of the graph, etc...  
 
 
 How would you design a transactional file system?
@@ -29,7 +35,9 @@ Write the implementaiton of LRU map
 
 Details about exactly how storage systems worked at the protocol level.
 
-Understanding of software architecture principles (OOD/OOP, unit testing etc.), a high-level design of distributed systems (load balancing, replication etc.), common web principles (sessions, cookies, REST etc.).  
+Understanding of software architecture principles (OOD/OOP, unit testing etc.),
+a high-level design of distributed systems (load balancing, replication etc.), 
+common web principles (sessions, cookies, REST etc.).  
 
 
 
