@@ -1,4 +1,5 @@
-The below mentioned resources/procedures are for Technical/Programming Interviews, applicable for most Product Based Companies/Tech Startups.(Google & the Big 4)
+The below mentioned resources/procedures are for Technical/Programming Interviews, applicable for
+most Product Based Companies/Tech Startups.(Google & the Big 4)
 
 Competitive Coding :-
 Topcoder :
