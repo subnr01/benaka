@@ -1,6 +1,13 @@
-Like coding interviews, candidates who haven’t spent enough time preparing for System Design Interviews (SDIs) mostly perform poorly. This gets aggravated when you are interviewing at the top companies like Google or Facebook. In these companies, if a candidate doesn’t perform above average, they have a limited chance to get an offer. Also, a good performance in such interviews always results in a better offer (financially), since your performance reflects upon your ability to work with complex systems.
+Like coding interviews, candidates who haven’t spent enough time preparing for System Design Interviews
+(SDIs) mostly perform poorly. This gets aggravated when you are interviewing at the top companies
+like Google or Facebook. In these companies, if a candidate doesn’t perform above average, they
+have a limited chance to get an offer. Also, a good performance in such interviews always results 
+in a better offer (financially), since your performance reflects upon your ability 
+to work with complex systems.
 
-Also, all these big companies like candidates who are familiar with distributed systems concepts like Consistent Hashing, Data Partitioning, Load Balancing, Redundancy and Replication, CAP Theorem, etc.
+Also, all these big companies like candidates who are familiar with distributed systems concepts 
+like Consistent Hashing, Data Partitioning, Load Balancing,
+Redundancy and Replication, CAP Theorem, etc.
 
 A few sample design problems are:
 
