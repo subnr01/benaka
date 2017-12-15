@@ -1,0 +1,135 @@
+Log structured file system
+
+
+
+
+What is the need for a log structured file system?
+How is it better? How is it worse?
+What is the technique?
+
+
+Main idea:
+— write modifications go to a sequential log on the disk, thus speeding file writing and log recovery.
+— Log contains  index information, that helps to read back files effeciently.
+— Log is divided into segments and a segment cleaner alleviates segmentation.
+
+
+Introduction
+— Application performance is becoming more and more disk bound due to slower disk times and faster cpus.
+— More memory means more caching, hence read requests mostly satisfied by in memory caching
+— Writes are done to a sequential log on the disk, so eliminates disk seek times.
+— Crash recovery is easier, as only recent portion of log needs to be examined and not the entire disk.
+— Data is stored permanently in the log and the log contains indexing information so that files can be read back
+with efficiency compared to the current file systems.
+—There is performance suffering when there is random writes followed by sequential reads.
+
+
+Need for new approach
+          — CPU speed is increasing at a very high rate than disk bandwidth(slight improvement with use of disk arrays and parallel head disks)
+              and access time ( hard to improve due to mechanical motions).
+         — Cheap memory has led to large caches, so caches absorb most of the read traffic and disk traffic (and performance) is dominated 
+              by more and more writes.
+         — Workloads which have accesses dominated by small files have a problems as most of the writes are often dominated by metadata updates.
+         — Existing file systems spread information around the disk in an inefficient way: File data may be sequentially laid, but it
+             is interpresed between different files .It can take five separate dis I/Os, each preceded by a seek to create a new file in Unix FFS. When                         
+             writing small files to such a system, less than 5% of the disk potential bandwidth is used for new data and the rest of the time is spent seeking.
+        — The other problem with current file systems is that they handle writes synchronously. This means that the application needs to wait. For example,
+             even though Unix FFS writes data blocks asynchronously, file system metadata structures (inodes, directories) are written synchronously.
+       — Synchronous writes couple application’s performance to that of a disk, and make it hard for the application to benefit from faster CPUS. They also
+            defeat the potential use of. the file cache as a write buffer.
+
+
+ 
+Log structure file systems
+— The fundamental idea is to improve write performance by buffering a sequence of file system changes in the file cache and then writing all changes to the disk sequentially in a 
+single disk write operation. ( this write includes data and metadata)
+— For workloads with small files, this includes conversion of many small synchronous random writes of traditional file systems into large asynchronous sequential transfers that can utilize nearly
+100% of the raw disk bandwidth.
+— To make the above possible, there are two keys things that need to be resolved:
+       — how to retrieve information from the log.
+       — how to manage free space on disk, so that large extents of free space is always available for writing new data.
+
+
+File location and reading
+So the challenge is how to find/retrieve data from the log.
+In traditional file systems, inodes contain file metadata+disk addresses of the blocks of the file and this inode information
+is stored in a fixed place. (using the inode number, we can get the location of the log).
+In the same way, we need to find the location of the inode in the LFS as well and from then on, it will be same as the traditional file system.
+LFS introduces a data structure called inode map which contains the location of the latest inode of every file. The incore inode map is updated
+with the inode location whenever the new version of the inode is written in the log. Most of inode lookups go through the in-core inode map.
+The inodemap is also written to disk and its location is stored in a fixed region in disk called checkpoint region.
+
+Free space management: segments
+The management of free space is a very big challenge. The goal is maintain large free extents for writing new data ( keeping fragmentation low).
+There can be two choices: threading and copying. Threading is linking the free extents inside the log (which does not keep fragmentation low though
+the free extents are easier to find). Copying is where data is copied and rewritten to the head of the log, in order to leave free extents for writing (expensive).
+The method followed is a combination of threading and copying. The disk is divided into segments (512/1024 KB) and data is written to the segments. All live
+data must be copied out of a segment before it can be re-written. The log is threaded on a segment to segment basis. If the system can collect long lived data
+together into segments, those segments can be copied over so that data need not copied repeatedly.
+The process of copying live data out of a segment is called segment cleaning. It is a three step process: read a number of segments into memory, identify the live data 
+and write the live data back to the smaller number of clean segments. Since there is a need to identify which blocks to write back, every segment contains a 
+segment summary which contains a version number and inode number to which the block belongs. The inode map also contains a version number to
+which the file inode belongs and this version is updated and on very file operation on the file. These versions are compared and if they do not match, then the segment
+can be discarded without examining the file’s inode ( no need to lookup disk addresses). ( note there can be more than one segment summary within a segment)
+
+Segment cleaning policies:
+Four main questions:
+1. When should cleaner execute? (in background at low priority/ when disk space is nearly exhausted?)
+2. How many segments it should clean at a time. ( more or less, the tradeoffs)
+3. Which segments should it clean? ( the ones that are most fragmented, ?)
+4. How should the live blocks be grouped when they are written out?  ( group segments by last accessed (age sort )                                                                                                                                 or locality of future reads e.g. by grouping files in the same directory together into an single output segment???)
+
+
+The first two can be achieved by maintaining thresholds however the third and the fourth are the primary factors that 
+determine the performance of a log structured file system.
+
+
+Conclusion
+The idea behind log structured file system is a simple one. Collect large amounts of cached data and write to disk in a single I/O and
+use all disk bandwidth. Although we developed a log-struc- tured file system to support workloads with many small files, the approach also works very well for large-file accesses. In particular, there is essentially no cleaning overhead at all for very large files that are created and deleted in their entirety. 
+
+The bottom line is that a log-structured file system can use disks an order of magnitude more efficiently than existing file systems. This should make it possible to take advantage of several more generations of faster processors before 1/0 limitations once again threaten the scalability of computer systems. 
+
+Advantages and disadvantages of LFS
+http://www.cs.cornell.edu/courses/cs4410/2015su/lectures/lec20-lfs.html
+
+* data can be lost if it has been written but not checkpointed. This can be mitigated by decreasing the time between checkpoints or allowing applications to ask to wait until the next checkpoint before proceeding. 
+* most reads are absorbed by cache; writes always append to the log, so they are sequential and very fast. 
+* blocks are located on disk in exactly (or almost exactly) the order in which they were last written. Even if reads miss cache, they will have good locality if the order in which files are read mimics the order in which they are written. 
+* LFS is good for flash memory (solid-state disks or SSDs): flash memory degrades with each subsequent write, but LFS naturally levels out writes evenly across all segments. 
+* SSDs also require write operations on very large segments; writing segments fits these usage characteristics very well. 
+
+
+To read:
+http://www.cs.yale.edu/homes/aspnes/pinewiki/LogStructuredFilesystem.html
+https://www.starwindsoftware.com/blog/log-structured-file-systems-in-a-nutshell
+https://lwn.net/Articles/353411/
+
+Look at the ppt 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
