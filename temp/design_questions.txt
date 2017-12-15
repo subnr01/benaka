@@ -1,0 +1,117 @@
+Design questions
+
+1. Implement String class
+2. Implement singleton
+3. Implement reference counting
+4. Implement garbage collection
+5. Implement vector/map???
+6. Implement iterators???
+7. Implement a memory pool???
+8. Implement a locking system ( mutex/semaphore/barrier)???
+9. Implement a circular buffer?
+10. Implement a logging system (C++ logger)
+11. Implement a hashmap???
+12. Implement a red black tree???
+13. Implement a thread pool?
+14. Implement a work queue with a worker thread?
+15. Implement a scheduler?
+16. Implement a lockscope?
+17. Implement a free list?
+18. Implement a bloom filter?
+19. Implement a multi threaded web server?
+20. Implement autoptr?
+21. Implement a heap/priority queue?
+22. Implement itoa?
+23. Implement atoi?
+24. Implement strstr?
+25. Design in memory file system (leet code)
+26. Implement C++ virtual table
+27. Design alarm clock
+28. Binary tree expression parser
+29. Buddy bitmap (GitHub)
+30. bounded buffer
+31. concurrent queue design
+32. concurrent hash queue
+33. thread safe queue
+34. read write lock implementation
+35. mutex implémentation
+36. semaphore implementation
+37. condition variable implementation
+38. highly available DHCP server
+39.  callback_design (GitHub)
+40. priority queue design (GitHub)
+41. LRU cache design
+42. Create a stream reader in C++ that consolidates multiple different stream inputs.  
+43. Implement malloc (not free) using some given function pagemalloc  
+44. one question also on implementing a process table and killing all the child and grandchild processes once a main one was terminated.
+45. memove() function
+46. implement strcmp, memcmp
+47. Design a lock free data structure
+48. Design and implement file cache 
+49. Design an ID allocator which can allocate and de-allocate from a range of 1-1,000,000. 
+50. Implement two functions that assign/release unique id's from a pool. Memory usage should be minimized and the assign/release should be fast, even under high contention. 
+51. Implement a dictionary tree.
+52. Implement a function that searches a file system for files with identical contents. 
+53. Design a spell checking algorithm
+54. Write a basic file system and implement the commands ls, pwd, mkdir, create, rm, cd, cat, mv. 
+55. Design a trie
+56. Design a b-plus tree
+57. Different ways of allocating a 2D array in C
+58. Huffman code
+59. Design a job scheduling system
+60. 
+
+
+
+
+
+
+
+Large scale design questions
+1. Design google docs
+2. Design a system that processes events in real time.
+3. ftp server design
+4. routing table design
+5. Distributed key store
+6. Design instagram
+7. Design über backend
+8. Design youtube
+9. Design tiny url
+10. Duplicated urls
+11. rate limiter
+12. web cache
+13. Design a network file system: which operations of a POSIX file system  are you going to support, how would you organize the hardware, how does the communication work, how are the files stored, etc... discuss all design decisions in terms of the CAP theorem,  be able to spot hot-spots and single points of failure. 
+14. Design transactional file system
+15. Implement a LRU cache that can be initialized with a max size (in bytes) and keeps track of the hits/misses. 
+16. Design hash table for a distributed system (DHT memsql).
+17. Design a web crawler. 
+18. How to find duplicate files in storage .
+19.  Multi-threaded token bucket algorithm  
+20. 
+
+
+
+Game design
+1. Tic tac toe
+2. Connect 4
+3. Minesweeper
+4. Snake Ladder
+5. Design Sudoku
+
+
+
+Algorithms
+Find the top 1000 most frequent words in a text file, with better than O(nlogn) complexity
+Implement a binary search tree for floating-point values.  
+Implement external merge sort given text file of numbers
+
+
+General
+
+Details about exactly how storage systems worked at the protocol level.
+
+Understanding of software architecture principles (OOD/OOP, unit testing etc.),
+a high-level design of distributed systems (load balancing, replication etc.), 
+common web principles (sessions, cookies, REST etc.).  
+
+
