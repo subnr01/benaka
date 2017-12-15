@@ -1,0 +1,73 @@
+FFS (Fast File System)
+
+—McKusick 
+
+
+— The paper describes changes done to the original 512 byte Unix file system.
+— The original unix file system is incapable of providing the data throughput rates that many applications require. (why???) 
+— The 512 byte unix file system provides only about 2 percent of the max disk bandwidth (why???)
+
+
+— Inode information is segregated from data. thus accessing a file normally incurs a long seek from the file’s inode to its data.
+— Next sequential data block not on the same cylinder, hence this forces seeks between 512 byte transfers.
+— small block size, limited read-ahead and many seeks limit the file system throughput.
+
+Two temporary solutions:
+— change block size from 512 to 1024, good for disk transfer, but still seek before  every block access.
+— Periodically reorganize data to improve locality.
+
+ 
+Cylinder group
+— minimum size of the file system block is 4096 bytes. Block size stored in the super block.
+— New file system organization divides disk partition into one or more cylinder groups. 
+    — A cylinder group consists of one or more consecutive cylinders on disk.
+    — Every cylinder group has super block copy, space for inodes, bit map describing available blocks in the cylinder group
+         and summary information describing the usage of data blocks within the cylinder group.
+    —Bit map replaced the traditional file system free list of blocks.
+    — For each cylinder group, a static number of inodes is allocated at file system creation time.
+   —Cylinder group bookkeeping information begins at a varying offset from the beginning of the cylinder group.
+   — The offset for each successive cylinder group is calculated to be about one track further from the beginning of the cylinder group 
+        than the preceding cylinder group, so that any single track, cylinder, or platter can be lost without losing all copies of the super-block 
+
+
+Optimising storage utilisation
+—Data is laid out so that larger blocks can be transferred in a single disk transaction, greatly increasing file system throughput. 
+—In large files, several 4096 byte blocks may be allocated from the same cylinder so that even larger data transfers are possible before requiring a seek 
+
+
+Small files problem
+— A uniformly large block size wastes space, if there are small files.
+—As the block size on the disk increases, the waste rises quickly, to an intolerable 45.6% waste with 4096 byte file system blocks. 
+
+
+Fragments
+— To store small files in an efficient way, the concept of division of the file system block into fragments is introduced.
+— Each file system block can optionally be broken into 2, 4, or 8 fragments, each of which is addressable, with the lower bound being 512 bytes (disk sector size).
+— The block map records the fragment information.
+￼
+In this example, fragments 0−5, 10, and 11 are in use, while fragments 6−9, and 12−15 are free.  Fragments of adjoining blocks cannot be used as a full block.
+If a file system block must be fragmented to obtain space for a small amount of data, the remaining fragments of the block are made available for allocation to other files. 
+
+
+Space allocation
+— Space allocated to file during write system call.
+— When size of the file is increased, one of three conditions exist
+     — New data can fit in the existing block or fragment.
+     — Last filled fragment/block does not contain space, so a new block is allocated and the fragment/block is filled.
+     — File is full of fragments, so if total size exceeds a block, then the data in the fragments are coalesced together in a single block.
+
+
+
+
+
+
+
+
+
+
+
+
+
+=======================================================================
+Soft Updates: A Technique for Eliminating Most Synchronous Writes in the Fast Filesystem 
+
