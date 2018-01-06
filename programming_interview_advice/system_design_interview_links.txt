@@ -20,3 +20,6 @@ https://github.com/shashank88/system_design#designques
 
 https://www.hiredintech.com/system-design/the-system-design-process/
 
+
+file system blog
+https://fsgeek.ca/
