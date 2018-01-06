@@ -18,3 +18,5 @@ http://blog.gainlo.co/index.php/category/system-design-interview-questions/
 
 https://github.com/shashank88/system_design#designques
 
+https://www.hiredintech.com/system-design/the-system-design-process/
+
