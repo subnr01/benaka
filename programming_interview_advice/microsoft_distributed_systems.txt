@@ -1,1 +1,25 @@
 https://www.microsoft.com/en-us/research/event/msr-india-2012-summer-school-on-distributed-algorithms-systems-and-programming/?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fevents%2Fmsri2012summerschool%2F
+
+
+
+http://webee.technion.ac.il/~idish/sigactNews/DC-col35-Sep09.pdf
+
+https://www.usenix.org/conference/worlds-04/seven-deadly-sins-distributed-systems
+
+university of waterloo
+https://www.youtube.com/playlist?list=PLawkBQ15NDEkDJ5IyLIJUTZ1rRM9YQq6N
+
+
+MIT
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-824-distributed-computer-systems-engineering-spring-2006/
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-852j-distributed-algorithms-fall-2009/index.htm
+
+
+KTH (nice reviews)
+https://www.youtube.com/playlist?list=PL700757A5D4B3F368
+
+Famous guy: Prof Rachid
+http://lpd.epfl.ch/site/education/da
+
+quora
+https://www.quora.com/Which-is-a-good-online-course-for-studying-distributed-systems-Video-lectures-preferred
