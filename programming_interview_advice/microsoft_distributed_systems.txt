@@ -23,3 +23,5 @@ http://lpd.epfl.ch/site/education/da
 
 quora
 https://www.quora.com/Which-is-a-good-online-course-for-studying-distributed-systems-Video-lectures-preferred
+
+https://www.reddit.com/r/learnprogramming/comments/2oos5i/best_way_to_improve_my_algorithm_skills/
