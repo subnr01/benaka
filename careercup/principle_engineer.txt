@@ -1,1 +1,11 @@
 https://www.careercup.com/page?pid=principal-software-engineer-interview-questions
+https://www.careercup.com/page?pid=staff-engineer-interview-questions
+https://www.careercup.com/page?pid=software-architect-interview-questions
+https://www.careercup.com/page?pid=tech-lead-interview-questions
+https://www.careercup.com/page?pid=systems-design-engineer-interview-questions
+https://www.careercup.com/page?pid=mts-interview-questions
+https://www.careercup.com/page?pid=technical-architect-interview-questions
+https://www.careercup.com/page?pid=computer-scientist-interview-questions
+https://www.careercup.com/page?pid=dev-lead-interview-questions
+
+
