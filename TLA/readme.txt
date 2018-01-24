@@ -16,3 +16,5 @@ http://muratbuffalo.blogspot.com/2016/11/
 
 
 http://brooker.co.za/blog/2013/01/20/two-phase.html
+
+http://brooker.co.za/blog/
