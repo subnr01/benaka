@@ -13,3 +13,6 @@ https://www.cse.msu.edu/~cse814/Lectures/TLA+Presentation.pdf
 
 
 http://muratbuffalo.blogspot.com/2016/11/
+
+
+http://brooker.co.za/blog/2013/01/20/two-phase.html
