@@ -14,12 +14,29 @@ https://www.quora.com/Is-there-anything-similar-to-Grokking-the-System-Design-in
 https://www.quora.com/How-is-grokking-the-system-design-interview-course-Is-it-worth-buying-for-80
 
 http://blog.gainlo.co/index.php/category/system-design-interview-questions/
-
-
-https://github.com/shashank88/system_design#designques
-
 https://www.hiredintech.com/system-design/the-system-design-process/
 
 
 file system blog
 https://fsgeek.ca/
+
+----------------
+Github links
+----------------
+
+https://github.com/Developer-Y/Scalable-Software-Architecture
+https://github.com/shashank88/system_design#designques
+https://github.com/donnemartin/system-design-primer
+https://github.com/checkcheckzz/system-design-interview
+https://gist.github.com/vasanthk/485d1c25737e8e72759f
+https://github.com/FreemanZhang/system-design
+https://xmruibi.gitbooks.io/interview-preparation-notes/SystemDesign/DistributedSystem.html
+https://www.gitbook.com/book/orrsella/soft-eng-interview-prep/details
+http://paperswelove.org/raleigh-durham/docs/api_design/api-design-notes.html
+https://hintjens.gitbooks.io/scalable-c/content/chapter2.html
+
+
+Distributed systems
+https://www.gitbook.com/book/dongjaekim/distributed-systems/details
+https://www.gitbook.com/book/wizardforcel/distributed-systems-engineering-lecture-notes/details
+https://steveloughran.gitbooks.io/distributed-testing/content/
