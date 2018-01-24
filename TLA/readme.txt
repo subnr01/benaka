@@ -17,6 +17,8 @@ http://muratbuffalo.blogspot.com/2016/11/
 
 http://brooker.co.za/blog/2013/01/20/two-phase.html
 
+http://research.microsoft.com/en-us/um/people/lamport/tla/wildfire-challenge.html
+
 
 Distributed system blogs
 ---------------------------
