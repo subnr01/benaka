@@ -2,3 +2,13 @@ http://ccinterviewquestions.blogspot.com/
 
 
 http://www.bogotobogo.com/cplusplus/quiz_multithreading.php
+
+
+https://www.cs.bham.ac.uk/~szh/teaching/ssc/lecturenotes/Concurrency/Tutorial_Week9.pdf
+
+https://github.com/MaximAbramchuck/awesome-interview-questions#c
+
+
+https://www.reddit.com/r/cpp/comments/sppna/i_had_a_c_interview_here_are_some_questions/
+
+https://juanchopanzacpp.wordpress.com/2013/02/26/concurrent-queue-c11/
