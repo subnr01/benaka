@@ -34,7 +34,7 @@ https://xmruibi.gitbooks.io/interview-preparation-notes/SystemDesign/Distributed
 https://www.gitbook.com/book/orrsella/soft-eng-interview-prep/details
 http://paperswelove.org/raleigh-durham/docs/api_design/api-design-notes.html
 https://hintjens.gitbooks.io/scalable-c/content/chapter2.html
-
+https://github.com/binhnguyennus/awesome-scalability
 
 Distributed systems
 https://www.gitbook.com/book/dongjaekim/distributed-systems/details
