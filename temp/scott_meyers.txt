@@ -1,0 +1,245 @@
+=================
+Designs and Declarations
+
+
+
+
+Item 18: Make interfaces easy to use correctly and hard to use incorrectly. 
+
+— Good interfaces are easy to use correctly and hard to use incorrectly. You should strive for these characteristics in all your interfaces.  — Ways to facilitate correct use include consistency in interfaces and behavioral compatibility with built-in types  — Ways to prevent errors include creating new types, restricting opera- tions on types, constraining object values, 
+and eliminating client re- source management responsibilities.  — 	tr1::shared_ptr supports custom deleters. This prevents the cross- DLL problem, can be used to automatically unlock mutexes  
+
+
+Item 19: Treat class design as type design. 
+— Class design is type design. Before defining a new type, be sure to consider all the issues discussed in this Item. 
+
+
+Item 20: Prefer pass-by-reference-to-const to pass-by- value. 
+— If you use pass by copy, then function parameters are initialized with copies of the actual arguments, 
+and function callers get back a copy of the value returned by the function. 
+— pass by reference to const is more efficient. no constructors or destructors are called,  because no new objects are created
+— Pass by reference also avoid the slicing problem. When a derived class object is passed (by value) as a base class object, the 
+base class copy constructor is called, and the specialized features that make the object behave like a derived class object are “sliced” off. 
+Suppose a function takes base class copy as arg, then whatever dervied parameter you pass is sliced out.
+void printNameAndDisplay(Window w) 
+WindowWithScrollBars wwsb; 
+printNameAndDisplay(wwsb); 
+
+The way around the slicing problem is to pass w by reference-to-const 
+printNameAndDisplay(const Window& w )
+
+Since internal representation of reference is a pointer, it is better to pass pointers instead of references for native
+types.
+
+The rule doesn’t apply to built-in types and STL iterator and func- tion object types. For them, pass-by-value is usually appropriate. 
+Implementers of iter- ators and function objects are responsible for seeing to it that they are efficient to copy and are not subject to the slicing problem 
+
+
+
+Item 21: Don’t try to return a reference when you must return an object. 
+Never return a pointer or reference to a local stack object, a refer- ence to a heap-allocated object, or 
+a pointer or reference to a local static object if there is a chance that more than one such object will be needed. 
+
+If it is stack allocated, then the object will not be there in existence.
+
+if it is heap allocated, then it may lead to resource leaks. Consider the below example:
+const Rational& operator*(const Rational& lhs,  const Rational& rhs) 
+w = x * y * z;  ( since there are two multiply operations, it can lead to resource leak in-between)
+
+
+Item 22: Declare data members private. 
+If you implement access to a data member through a function, you can later replace the data member with a computation, and nobody using your class will be any the wiser. 
+This is called encapsulation
+
+Hiding data members behind functional interfaces can offer all kinds of implementation flexibility. For example, it makes it easy to notify other objects when data members are read or written, to verify class invariants and function pre- and postconditions, to perform synchronization in threaded environments.
+
+The point about encapsulation is more important than it might ini- tially appear. If you hide your data members from your clients  you can ensure that class invariants are always maintained, because only member functions can affect them 
+
+Declare data members private. It gives clients syntactically uniform access to data, affords fine-grained access control, allows invariants to be enforced, and offers class authors implementation flexibility. 
+
+protected is no more encapsulated than public. 
+
+
+Item 23: Prefer non-member non-friend functions to 
+member functions. 
+
+
+
+Item 24: Declare non-member functions when type conversions should apply to all parameters 
+
+Item 25: Consider support for a non-throwing swap. 
+
+
+
+===================
+Constructors, Destructors and Assignment Operators 
+
+
+Item 5: Know what functions C++ silently writes and calls
+— Compilers can generate constructors, copy constructors and copy assignment operators if you do not provide them
+— The generated ones usually call the constructors of the data members and in case of primitive types, perform a bitwise copy.
+— The generated destructor cannot be a virtual destructor unless the class is a derived class and the base class has a virtual destructor.
+—  If you provide a parametrized constructor, then the trivial constructor is not generated.
+
+
+Item 6: Explicitly disallow the use of compiler-generated functions you do not want
+— Declare member functions private and give them no implementation, so that copy or assignment is disallowed.
+
+Item 7: Declare destructors virtual in polymorphic base classes
+— If you have a factor function that returns a pointer to the derived class like below:
+TimeKeeper *ptk = getTimeKeeper();
+and your base class destructor is not virtual, then the problem is that when the derived
+object is deleted via the base class pointer, the base class part of the object is destroyed
+while the derived part of the object is never destroyed leading to partially destroyed object, 
+memory leaks and corrupt data structures.
+
+— A base class should have a virtual destructor and a non base class should not have one.
+— A virtual destructor brings in additional memory via an extra pointer.
+— String, STL classes lack a virtual destructor, so be careful inheriting from them.
+
+
+Item 8: Prevent exceptions from leaving destructors
+— C++ does not prohibit destructors from emitting exceptions, but it certainly discourages the practice.
+— what to do if your destructor wants to perform an operation that can cause an exception
+— what are the choices:
+	— Make a log entry and swallow the exception. 
+	— Make a log entry and terminate
+	— Have a wrapper function and let the clients use the wrapper function can catch exceptions themselves.
+	— Keep track whether clients called the wrapper function, if not call it inside the destructor and swallow the exception
+
+
+
+Item 9: Never call virtual functions during construction or destruction
+— Base class parts of derived class objects are constructed before derived class parts are.
+— During base class construction, virtual functions.never go down into derived classes. This is understandable
+     as derived class members are initialized only after the base class is fully constructed and if a virtual function
+     accesses a derived class member (unconstructed) then page fault.
+— An object doesn’t become a derived class object until execution of a derived class constructor begins 
+— Derived class destructor runs before the base class destructor.
+
+
+Item 10: Have assignment operators return a reference to *this
+— assignments can be chained if the assignment operators return a reference.
+— This convention applies to all assignment operators like “+=“, not just 
+
+Item 11: Handle assignment to self in operator=
+— The identity test is required mainly for pointers, since when you delete and then try to reconstruct, then it can be an issue
+like the example below
+Widget& Widget::operator=(const Widget& rhs) { 
+//if (this == &rhs) return *this; 
+delete pb; pb = new Bitmap(*rhs.pb); 
+return *this; } 
+
+— Another important thing is exceptions. we just have to be careful not to delete pb until after we’ve copied what it points to 
+Widget& Widget::operator=(const Widget& rhs) { 
+Bitmap *pOrig = pb; pb = new Bitmap(*rhs.pb); delete pOrig; 
+return *this; 
+} 
+IN the above, if the new Bitmap throws exception, pb remains unchanged.
+
+We can use the copy and swap instead of plain self assignment. Actually it is more recommended when there 
+are exceptions
+
+Widget& Widget::operator=(const Widget& rhs) { 
+	Widget temp(rhs); // make a copy of rhs’s data 
+	swap(temp); // swap *this’s data with the copy’s 
+	return *this; 
+} 
+
+Item 12: Copy all parts of an object
+—if you add a data member to a class, you need to make sure that you update the copying functions 
+— Any time you take it upon yourself to write copying functions for a derived class, you must take care to also copy the base class parts. 
+— This usually involves calling the base class constructor or the base class copy constructor/assignment operator.
+— Good practice is that your copy constructor and copy assignment operator have similar code bodies, eliminate 
+duplication by creating a third function that both can call
+
+
+
+
+
+
+
+
+================
+
+Resource Management
+
+
+Item 13 : Use objects to manage resources.
+— To make sure that a resource is always released, we need to put the resource inside an object whose destructors
+will automatically release the resource when the control leaves the function.
+— auto_ptr is a pointer like object whose destructor automatically calls delete on what it points to. 
+— This is often called 	Resource Acquisition Is Initialization (RAII), because it’s so common to acquire a resource and initialize a 
+resource-managing object in the same statement.  — Make sure that there is only one auto_ptr pointing to the object., as if there are two, then there is a second invocation of delete to
+an already released resource. Anyways to prevent such problems, the copy constructor/assignment operator of smart pointers are tailered
+such that they are set to NULL and the copying pointer assumes complete ownership. This is also a reason as to why container of auto pointers is not allowed.
+— An alternative to auto_ptr is the reference counting smart pointer. An RCSP is a smart pointer that keeps track of how many objects point to a particular resource 
+and automatically deletes the resource when nobody is pointing to it any longer. As such, RCSPs offer behav- ior that is similar to that of garbage collection. Unlike 
+garbage collec- tion, however, RCSPs can’t break cycles of references (e.g., two otherwise unused objects that point to one another).
+— tr1::shared_ptr is a RCSP, this code looks almost the same as that employing auto_ptr, but copying shared_ptrs behaves much more naturally. Because copying tr1::shared_
+ ptrs works “as expected,” they can be used in STL containers and other contexts where auto_ptr’s unorthodox copying behavior is inappropriate. 
+— Both auto_ptr and tr1::shared_ptr use delete in their destructors, not delete [] . That means that using auto_ptr or tr1::shared_ptr with dynamically allocated arrays is a bad idea 
+
+
+Item 14: Think carefully about copying behavior in resource-managing classes.
+— Not all resources are heap based, but for those which are,  smart pointers like auto_ptr and tr1::shared_ptr are appropriate
+— Prohibit copying of certain RAII objects. Objects like locks are not useful to be copied.
+— When we’re done with a Mutex, we want to unlock it, not delete it. 
+— shared_ptr gives the option  of a deleter. destructor of a shared_ptr will call its deleter???
+—Sometimes you would rather prefer, only one RAII object refers to the raw resource, ownership is transferred from the copied to the
+copying object.
+
+Item 15: Provide access to raw resources in resource- managing classes.
+— Resource-managing classes are wonderful.  They are the bulwarks against resource leaks.
+— Access to raw resource from auto_ptr or shared_ptr can be via the get() function or the “->”
+— RAII classes don’t exist to encapsulate something; they exist to ensure that a particular action — resource release — takes place. So encapsulation is not intended functionality, and hence
+exposure to the raw resource is not wrong.
+
+
+Item 16: Use the same form in corresponding uses of new and delete.  — If you use brackets in your use of delete, delete assumes an array is pointed to.  Otherwise it assumes that it is a single object.
+
+
+Item 17: Store newed objects in smart pointers in standalone statements. 
+— It is not recommended to pass arguments to functions that construct objects. Construct the objects and then pass them to functions.
+std::tr1::shared_ptr<Widget> pw(new Widget);  processWidget(pw, priority()); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
