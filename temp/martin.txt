@@ -1,0 +1,55 @@
+Replication
+
+Replication means keeping copy of the same data on multiple machines that are connected via a network.
+Reasons to replicate data:
+1. Keep data close to the users, so as to reduce latency
+2. Increase availability in the event of failures
+3. To scale out number of machines that can serve read queries (increase read throughput)
+
+Replication is good, when the dataset is very small, When the dataset becomes huge, partition/sharding is best
+If data you are replicating is not changing, then it is not difficult. The difficulties actually lie in handling changes to replicated data.
+
+Three popular algorithms:
+1. Single leader
+2. Multi leader
+3. Leaderless replication
+
+
+Leader based replication
+
+— One of the replicas is designated as the leader. All client write requests go to the leader which writes first to its local storage.
+— the leader then sends the new data to its followers. Each follower takes in the data and updates their local copy in the same write order.
+— Client can read the data from either the leader or the followers, but writes are accepted only at the leader.
+
+Examples include Oracle Data Guard, SQL server, MongoDB and distributed message brokers like Kafka.
+
+Synchronous vs Asynchronous replication
+— One follower is synchronous and the other is asynchronous; the leader only waits for the synchronous follower.
+— The advantage of synchronous replication is that leader failure is tolerable as the synchronous follower has the up to data.
+— The disadvantage is that the leader blocks all writes until the synchronous follower is done. Hence all followers must not synchronous, otherwise
+the entire system will halt on a single node failure.
+— In practice, if you enable syn‐ chronous replication on a database, it usually means that one of the followers is syn‐ chronous, and the others are asynchronous. If the synchronous becomes slow or unavailable, then the asynchronous follower becomes the synchronous.
+— Asynchronous has the advantage that the leader can continue processing writes, even if all of its followers have fallen behind. 
+— Weakening durability may sound like a bad trade-off, but asynchronous replication is nevertheless widely used, especially if there are many followers or if they are geo‐ graphically distributed. 
+— The greatest disadvantage of asynchronous is that if the leader fails, then there can be data loss. Concepts like chain replication (azure storage) try to bring the best of the two.
+
+Setting up new followers
+— Snapshot of the data base is taken and the new follower copies data out of the snapshot.
+— The follower connects to the leader and requests all the data changes that have happened since the snapshot was taken,
+with an exact position in the leader’s replication log. 
+— When the follower has processed the backlog of data changes since the snapshot, we say it has caught up. It can now continue to process data changes from the leader as they happen
+
+Handling node outages
+Being able to reboot individual nodes without downtime is a big advantage for operations and maintenance. Thus, our goal is to keep the system as a whole running despite individual node failures
+
+Follower failure
+On its local disk, each follower keeps a log of the data changes it has received from the leader. On restart from a failure, the follower can recover easily from its log. 
+
+Leader failure
+
+
+
+
+
+
+
