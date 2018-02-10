@@ -1,0 +1,159 @@
+Videos
+
+https://github.com/Developer-Y/Scalable-Software-Architecture
+
+=========================================================================
+Distributed Systems in One Lesson by Tim Berglund
+https://www.youtube.com/watch?v=Y6Ev8GIlbxc
+
+Four Distributed Systems Architectural Patterns by Tim Berglund
+https://www.youtube.com/watch?v=tpspO9K28PM
+
+=========================================================================
+
+https://www.youtube.com/watch?v=-W9F__D3oY4
+
+Lecture 9 Scalability Harvard Web Development David Malan
+
+==========================================================================
+
+How we scaled dropbox
+
+https://www.youtube.com/watch?v=PE4gwstWhmc
+
+Dropbox Database Infrastructure
+https://www.youtube.com/watch?v=71VryWiEw2A
+
+
+
+
+=======================
+
+Scaling über
+https://www.youtube.com/watch?v=kb-m2fasdDY
+
+
+Taking Storage for a Ride with Uber
+https://www.youtube.com/watch?v=Dg76cNaeB4s
+
+
+Scalable Real-time Complex Event Processing at Uber
+https://www.youtube.com/watch?v=nncxYGD6m7E
+
+
+How Uber scaled its Real Time Infrastructure to Trillion events per day
+https://www.youtube.com/watch?v=K-fI2BeTLkk
+
+=======================
+
+Facebook and memcached
+
+https://www.youtube.com/watch?v=UH7wkvcf0ys
+
+Scaling Server software at Facebook
+https://www.youtube.com/watch?v=gaOa-Dsbb4o
+
+
+Hacker Way: Facebook's High Performance Server Infrastructure
+https://www.youtube.com/watch?v=zBV9TkTXxg0
+
+Storage technologies at facebook
+https://www.youtube.com/watch?v=cSNGGAKJqwk
+
+lessons of scale at Facebook
+https://www.youtube.com/watch?v=QCHiNEw73AU
+
+
+High Performance at Massive Scale -- Lessons learned at Facebook" - Jeff Rothschild
+https://www.youtube.com/watch?v=lpFH9X_Fb8k
+
+
+Joydeep Sen Sarma - Messaging architecture at Facebook
+https://www.youtube.com/watch?v=5hUmdoMOrpo
+
+Building Real Time Infrastructure at Facebook - Facebook - SRECon2017
+https://www.youtube.com/watch?v=ODkEWsO5I30
+
+Scaling Instagram Infrastructure
+https://www.youtube.com/watch?v=hnpzNAPiC0E
+
+===================
+
+
+Scaling to over 1,000,000 requests per second
+https://www.youtube.com/watch?v=v-KfhCGW3MA
+
+
+
+Real-Time Delivery Architecture at Twitter
+https://www.youtube.com/watch?v=J5auCY4ajK8
+
+
+
+GOTO 2014 • Scaling Pinterest • Marty Weiner
+https://www.youtube.com/watch?v=jQNCuD_hxdQ
+
+
+
+Scaling Redis at Twitter
+https://www.youtube.com/watch?v=rP9EKvWt0zo
+
+RedisConf17 - Using Redis at Scale at Twitter - Rashmi Ramesh
+https://www.youtube.com/watch?v=QznaOSk20nU
+
+
+Sharding and scaling database
+https://www.youtube.com/watch?v=p3ytSdUQZzA
+
+
+Scaling youtube
+https://www.youtube.com/watch?v=MopkTrQMx1A
+
+
+===================================================
+
+Blitzscaling 15: Diane Greene on Scaling Products and Culture At VMware
+https://www.youtube.com/watch?v=vuqvVlfW798
+
+
+Blitzscaling 08: Eric Schmidt on Structuring Teams and Scaling Google
+https://www.youtube.com/watch?v=hcRxFRgNpns
+
+
+Scaling the Netflix Global CDN, lessons learned from Terabit Zero
+https://www.youtube.com/watch?v=tbqcsHg-Q_o
+
+
+
+Artur Bergman at Facebook's @Scale - Building and Scaling a Performant CDN
+https://www.youtube.com/watch?v=TLbzvbfWmfY
+
+
+Google I/O 2010 - The joys of engineering leadership
+https://www.youtube.com/watch?v=skD1fjxSRog
+
+
+
+Google I/O 2012 - The Art of Organizational Manipulation
+https://www.youtube.com/watch?v=OTCuYzAw31Y
+
+
+Google I/O 2011: Programming Well with Others: Social Skills for Geeks
+https://www.youtube.com/watch?v=q-7l8cnpI4k
+
+
+Google I/O 2012 - SQL vs NoSQL: Battle of the Backends
+https://www.youtube.com/watch?v=rRoy6I4gKWU
+
+
+
+Cloud Datastore 101: Overview of Google's scalable NoSQL document database (Google Cloud Next '17)
+https://www.youtube.com/watch?v=uZDk0NZGqHs
+
+
+Cloud Spanner 101: Google's mission-critical relational database (Google Cloud Next '17)
+https://www.youtube.com/watch?v=IfsTINNCooY
+
+
+Cloud Spanner 201: getting the most out of Cloud Spanner (Google Cloud Next '17)
+https://www.youtube.com/watch?v=Tzhe7sUNDbg
