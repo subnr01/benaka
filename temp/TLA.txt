@@ -1,0 +1,73 @@
+Use of Formal Methods at Amazon Web Services 
+
+
+— Formal specification and model checking to help solve difficult design problems in critical systems.
+
+— human intuition is poor at estimating the true probability of supposedly ‘extremely rare’ combinations of events in systems
+operating at a scale of millions of requests per second.
+
+— Testing code is inadequate as a method to find subtle errors in design, as the number of unreachable states of the code is
+astronomical.
+
+— Conventional design documents consist of prose, static diagrams, and perhaps pseudo code in a ad hoc untestable language. 
+At the other end, the final executable code is unambiguous, but contains an overwhelming amount of detail.
+As our designs are unavoidably complex, we needed a highly expressive language, far above the level of code, but with precise semantics. 
+
+TLA+ is a formal specification language. 
+ A TLA+ specification describes the set of all possible legal behaviors (execution traces) of a system. 
+We found it helpful that the same language is used to describe both the desired correctness properties of the system 
+(the ‘what’), and the design of the system (the ‘how’).
+
+TLA+ is intended to make it as easy as possible to show that a system design correctly implements the desired correctness properties, 
+either via conventional mathematical reasoning or specifically using tools such as the TLC model checker.
+
+
+Though syntax and idioms of TLA+ are somewhat unfamiliar to programmers, TLA+ is accompanied by a second language called
+the PlusCal which is closer to a C style programming language.
+
+
+Is this a better way to design systems. 
+Engineers naturally focus on designing the ‘happy case’ for a system, i.e. the processing path in which no errors occur.
+Once the design for the happy case is done, the engineer then tries to think of “what might go wrong?”, based on personal experience and that of colleagues and reviewers.
+
+When using formal specifications, we define correctness properties
+—> What is the system allowed to do? ( no data loss or corruption)
+—> What the system must eventually do? ( respond to requests received)
+Describe an abstract version of the design along with an abstract version of its operating environment.
+Then use the model checker to verify whether that the specification of the system in its environment implements
+the chosen correctness properties, despite any combination or interleaving of events in the operating environment. We have found this rigorous “what needs to go right?” approach to be significantly less error prone than the ad hoc “what might go wrong?” approach.
+
+When formal specification is not good
+We are concerned with two major classes of problems with large distributed systems: 
+1) bugs and operator errors that cause a departure from the logical intent of the system, and 
+2) surprising ‘sustained emergent performance degradation’ of complex systems that inevitably contain feedback loops. 
+We know how to use formal specification to find the first class of problems. However, problems in the second category can cripple a system even though no logic bug is involved. A common example is when a momentary slowdown in a server (perhaps due to Java garbage collection) causes timeouts to be breached on clients, which causes the clients to retry requests, which adds more load to the server, which causes further slowdown. In such scenarios the system will eventually make progress; it is not stuck in a logical deadlock, livelock, or other cycle. But from the customer's perspective it is effectively unavailable due to sustained unacceptable response times. TLA+ could be used to specify an upper bound on response time, as a real-time safety property. However, our systems are built on infrastructure (disks, operating systems, network) that do not support hard real-time scheduling or guarantees, so real-time safety properties would not be realistic. We build soft real-time systems in which very short periods of slow responses are not considered errors. However, prolonged severe slowdowns are considered errors. We don’t yet know of a feasible way to model a real system that would enable tools to predict such emergent behavior. 
+
+Reactive mechanisms  such as assertions or recovery oriented computing
+cannot recover from the class of bugs that cause permanent damage to customer data; instead, we must prevent such bugs.
+
+
+Why formal methods can be good:
+— Formal methods help engineers to get the design right, which is a necessary first step toward getting the code right.
+— Formal methods help engineers gain a better understanding of the design.
+— Formal methods can help engineers write better “self-diagnosing code“, in the form of assertions
+An assertion checks a small, local part of an overall system invariant. A good system invariant captures the fundamental reason why the system works; the system won’t do anything wrong that could violate a safety property as long as it continuously maintains the system invariant. The challenge is to find a good system invariant, one that is strong enough to ensure that no safety properties are violated
+
+
+
+
+==============
+
+
+Learnt TLA
+
+
+https://www.learntla.com/introduction/
+
+
+============
+
+Links
+
+https://cs.stackexchange.com/questions/13785/formal-program-verification-in-practice
+http://mindsighings.blogspot.com/2017/06/tla.html
