@@ -1,0 +1,13 @@
+C programming (things to look at)
+
+1. Structure padding
+2. macros
+3. endianess
+4. bitwise tricks
+5. callback implemenations
+6. C memory layout
+7. Bitfields and unions
+8. Memory corruption
+9. C library design
+10. Thread safe and re-entrency
+11. hash table
