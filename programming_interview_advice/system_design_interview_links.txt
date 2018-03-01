@@ -43,3 +43,4 @@ Distributed systems
 https://www.gitbook.com/book/dongjaekim/distributed-systems/details
 https://www.gitbook.com/book/wizardforcel/distributed-systems-engineering-lecture-notes/details
 https://steveloughran.gitbooks.io/distributed-testing/content/
+https://www.quora.com/What-are-the-ways-to-design-a-self-healing-distributed-system-Please-provide-practical-references
