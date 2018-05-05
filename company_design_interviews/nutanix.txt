@@ -1,5 +1,29 @@
 Nutanix:
 
+
+Given a list of integers, select first 2 integers and sum them together, say this sum is y, and remove them from the list. Create a range, x, such that x = [y/2, 3y/2]. In the remaining list of integers, find all pairs of integers whose sum is in x. Remove this pair along with every other pair whose sum is in x until there are no more integers in the list or none of the remaining pairs sum is in x. |input| % 2 == 0  
+
+Dynamic programming question. Given a list of non-overlapping (but intersecting) intervals {[0-2], [2-5], [6-10]} find the largest non-intersecting set with mamimum range. I.e in above | {[2-5], [6-10]} | > | {[0-2], [6-10]} |  
+
+Recursion. Towers of Hanoi. 
+
+Priority tree invariant questions. "Complete". System design of previous projects. APIs. 
+
+String question involving seperating words with carmel case
+
+Given a list of intervals of guests arriving and leaving ie: start time and end time, find the time with maximum guests  
+
+Give a sorted list of integers and a target value, find the index of the value in O(log n) time and O(1) space. The length of this list is infinite. ( good question and difficult) answer using sliding window maybe.
+
+Interleaved printing of 2 strings
+Buildings overlap, print outline
+Inverse bits in a number
+Flatten BST to list
+Add 2 numbers given as Linked List
+Fibonnaci for big integer
+External merge sort  
+
+==============================================================================================
 level order traversal with and without recursion and using DP, few other DP based questions, tries, 
 networking and DS questions. Design based questions, one question also on implementing a process 
 table and killing all the child and grandchild processes once a main one was terminated.
