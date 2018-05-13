@@ -39,5 +39,21 @@ Understanding of software architecture principles (OOD/OOP, unit testing etc.),
 a high-level design of distributed systems (load balancing, replication etc.), 
 common web principles (sessions, cookies, REST etc.).  
 
+Find minimum unique sum of an array
+
+Sparse search ( search in a sorted array containing empty strings)
+
+get the count of set bits and position of set bits in a binary number
+
+How sliding window in TCP can increase the network efficiency?  
+
+Asked to design a kind of data structure that is suitable for frequent adding and deleting
+event at the head, write add, delete, getLength function, and initialize it in the main function,
+try to debug if there is an exception.
+
+ Find max even length word in given string
+ 
+ 
+
 
 
