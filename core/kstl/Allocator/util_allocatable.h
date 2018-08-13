@@ -16,6 +16,7 @@ in lib/kma.c
 */
 #define RETURN_ADDRESS  __builtin_return_address(0u)
 
+template <class TAG, util::InjectModule INJ_MOD, util::InjectInstance INJ_INST>
 class Allocatable {
    public:
     void* operator new(size_t size) throw();
