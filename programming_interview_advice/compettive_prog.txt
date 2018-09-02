@@ -1,5 +1,16 @@
 https://www.quora.com/How-can-I-become-good-at-competitive-programming-Are-there-any-courses-that-will-take-me-one-step-forward-before-I-start-doing-SPOJ-or-TopCoder-problems-I-am-good-at-data-structures
 
+https://www.quora.com/How-do-I-prepare-for-ACM-ICPC-and-how-can-I-best-increase-my-chances-of-excelling-in-any-competitive-programming-event
+
+https://www.quora.com/How-can-I-improve-in-competitive-programming-I-solved-around-100-basic-questions-on-SPOJ-And-around-a-100-on-CodeChef-But-I-am-still-struggling-between-grey-and-green-on-Codeforces-What-kind-of-practice-should-I-do
+
+https://www.quora.com/What-basic-data-structures-and-algorithms-should-one-learn-before-starting-competitive-programming
+
+https://www.quora.com/How-do-I-solve-tough-programming-problems-in-CodeChef
+
+https://www.quora.com/What-platform-do-you-use-to-practice-competitive-programming
+
+https://www.quora.com/How-can-I-improve-in-competitive-programming-I-solved-around-100-basic-questions-on-SPOJ-And-around-a-100-on-CodeChef-But-I-am-still-struggling-between-grey-and-green-on-Codeforces-What-kind-of-practice-should-I-do
 
 https://discuss.codechef.com/questions/48877/data-structures-and-algorithms
 
