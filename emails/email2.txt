@@ -1,4 +1,0 @@
-As much as I like fixing things everywhere, this does not seem to qualify as
-a DB ShipStopper. The impact to customers is minimal (a superfluous error).
-Plus, this bug has existed since at least 9.1 (maybe further) and there have
-been no negative impacts. Thus, I recommend DEFER from DB and fix in VR.
