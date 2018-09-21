@@ -1,5 +1,0 @@
-/*
-
-This is a overview of how the ral datastructures are designed
-
-*/
