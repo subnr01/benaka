@@ -1,3 +1,23 @@
+/*
+Linux Futex
+
+Linux 2 phase lock
+A two-phase lock realizes that spinning can be useful, particularly 
+if the lock is about to be released. So in the first phase, the lock spins for a while, 
+hoping that it can acquire the lock.
+
+However, if the lock is not acquired during the first spin phase, a sec- ond phase is entered, 
+where the caller is put to sleep, and only woken up when the lock becomes free later.
+
+The Linux lock above is a form of such a lock, but it only spins once; a generalization of this 
+could spin in a loop for a fixed amount of time before using futex support to sleep.
+
+Two-phase locks are yet another instance of a hybrid approach, 
+where combining two good ideas may indeed yield a better one.
+
+*/
+
+
 void mutex_lock (int *mutex) 
 {
   int v;
@@ -12,6 +32,7 @@ void mutex_lock (int *mutex)
   while(1) {
     if (atomic_bit_test_set (mutex, 31) == 0) {
       atomic_decrement(mutex);
+      return;
     }
 
     /*
@@ -48,3 +69,4 @@ void mutex_unlock (int *mutex)
   */
   futex_wake (mutex);
 }
+  
